@@ -5,7 +5,7 @@ Milestone 1
 This milestone required downloading Football Match Data from various leagues for the 1990 to 2021 seasons.
 The data was subsequently manipulated by assigning points to teams depending on their match outcome for example and whether they were playing Home or Away, which required splitting the match results and then adding if statements to determine whether the game ended in a win, loss or draw.
 
-				home_goal = []
+	home_goal = []
         away_goal = []
         home_match_outcome = []
         away_match_outcome = []
@@ -43,9 +43,9 @@ The data was subsequently manipulated by assigning points to teams depending on 
                 away_match_outcome.append("Win")  
                 away_points.append(3)  
 								
-Although different methods were being used to manipulate and analyse the data, it was much more practical to move these into a class where they could be called as and when needed, rather than creating separate scripts and calling all the methods (or commenting out those which were not being used) which would be using a lot of disk memory. For a more streamlined user experience, a condition was added so that a user could select a league and season if wanting to review match/league data only, or also select a team from that league in order to revie team info. 
+Although different methods were being used to manipulate and analyse the data, it was much more practical to move these into a class where they could be called as and when needed, rather than creating separate scripts and calling all the methods (or commenting out those which were not being used) which would be using a lot of disk memory. For a more streamlined user experience, a condition was added so that a user could select a league and season if wanting to review match/league data only, or also select a team from that league in order to review team info. Any functions added to the class were named according to the method(s) they contained.
 
-				def __init__(self, match = True):
+	def __init__(self, match = True):
         #allow user to select league and year without manually changing file path
         
         try:
