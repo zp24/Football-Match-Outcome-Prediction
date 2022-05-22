@@ -5,7 +5,7 @@ Milestone 1
 This milestone required downloading Football Match Data from various leagues for the 1990 to 2021 seasons.
 The data was subsequently manipulated by assigning points to teams depending on their match outcome for example and whether they were playing Home or Away, which required splitting the match results and then adding if statements to determine whether the game ended in a win, loss or draw.
 
-	home_goal = []
+      home_goal = []
         away_goal = []
         home_match_outcome = []
         away_match_outcome = []
