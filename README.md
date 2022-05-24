@@ -12,7 +12,7 @@ The data was subsequently manipulated by assigning points to teams depending on 
         home_points = []
         away_points = []
             
-        split_result = data["Result"].str.split("-") #split results at '-' to separate numbers
+        split_result = self.x["Result"].str.split("-") #split results at '-' to separate numbers
 
         for res in split_result:
             #print("Home goals: ", res[0][0])    
