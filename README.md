@@ -5,7 +5,7 @@ Milestone 1
 This milestone required downloading Football Match Data from various leagues for the 1990 to 2021 seasons.
 The data was subsequently manipulated by assigning points to teams depending on their match outcome for example and whether they were playing Home or Away, which required splitting the match results and then adding if statements to determine whether the game ended in a win, loss or draw.
 
-      home_goal = []
+        home_goal = []
         away_goal = []
         home_match_outcome = []
         away_match_outcome = []
@@ -83,6 +83,11 @@ Although different methods were being used to manipulate and analyse the data, i
 
 This is yet to be done for analysing additional match data (including the date, referee and number of yellow or red cards handed out) as the current input methods are not sufficient to filter the data to show the chosen team and season.
 
-Once the above were complete, some hypotheses were added to a report based on any relationships and/or trends found, and predict what features will be more important for predicting the outcome of the match.
+Once the above were complete, the data was analysed again to find any relationships and/or trends, and predict what features will be more important for predicting the outcome of the match. Based on the data provided:
+- regardless of the number of matches played in the Premier League season for example, the percentage of Home wins will range between 40 and 45%.
+- teams playing in the Premier League generally score more goals when playing at their Home stadium
+- the most likely number of goals scored by the Home Team in a match is 1, with a 0.25% to 1.5% chance of a Home team scoring 4+ goals in a match
 
-This milestone was relatively straightforward, but the difficulty depended on the amount of knowledge for pandas and matplotlib in order to manipulate and analyse the match data as needed. But when this obstacle was overcome, it was quite rewarding to see how data could be analysed and utilised to record any trends and relationships found.
+Whilst manipulating the data can help determine some elements such as the biggest contributor to total home points and a general overview of a team's performance throughout the league, the information found in the link provided for each match is more reliable to predict the outcome of a match.
+
+This milestone was relatively straightforward, but the difficulty depended on the level of knowledge for pandas and matplotlib in order to manipulate and analyse the match data as needed. But when this obstacle was overcome, it was quite rewarding to see how data could be analysed and utilised to record any trends and relationships found.
