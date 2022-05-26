@@ -113,16 +113,16 @@ def get_elo(self):
 	
 As for the former, this was pretty much done in Milestone 1 as a result of experimenting with the data to test the capabilities of Pandas and Matplotlib when trying to visualise the data in a graph as well as in a dataframe. This was also done to assist in analysing team performances in a league when each season of the Premier League had their own script for example, which were subsequently removed once a class script was used to save memory and time, although it did somewhat assist in the hypotheses set out above.
 
-def get_cumulative_data(self): 
-        self.get_results()
-        self.x["Total_Home_Goals_So_Far"] = self.x.groupby(["Home_Team"])["Home_Goals"].cumsum() #cumulative addition of goals for each home team
-        self.x["Total_Away_Goals_So_Far"] = self.x.groupby(["Home_Team"])["Away_Goals"].cumsum() #cumulative addition of goals for each home team
-        self.x["Cumulative_Home_Goals"] = self.x["Home_Goals"].cumsum() #cumulative addition of goals for each home team
-        self.x["Cumulative_Away_Goals"] = self.x["Away_Goals"].cumsum() #cumulative addition of goals for each home team
-        self.x["Total_Home_Points_So_Far"] = self.x.groupby(["Home_Team"])["Home_Points"].cumsum() #cumulative addition of points for each home team
-        self.x["Total_Away_Points_So_Far"] = self.x.groupby(["Away_Team"])["Away_Points"].cumsum() #cumulative addition of points for each away team
-        self.x["Cumulative_Home_Points"] = self.x["Home_Points"].cumsum() #cumulative sum of home points
-        self.x["Cumulative_Away_Points"] = self.x["Away_Points"].cumsum() #cumulative sum of away points
+	def get_cumulative_data(self): 
+		self.get_results()
+		self.x["Total_Home_Goals_So_Far"] = self.x.groupby(["Home_Team"])["Home_Goals"].cumsum() #cumulative addition of goals for each home team
+		self.x["Total_Away_Goals_So_Far"] = self.x.groupby(["Home_Team"])["Away_Goals"].cumsum() #cumulative addition of goals for each home team
+		self.x["Cumulative_Home_Goals"] = self.x["Home_Goals"].cumsum() #cumulative addition of goals for each home team
+		self.x["Cumulative_Away_Goals"] = self.x["Away_Goals"].cumsum() #cumulative addition of goals for each home team
+		self.x["Total_Home_Points_So_Far"] = self.x.groupby(["Home_Team"])["Home_Points"].cumsum() #cumulative addition of points for each home team
+		self.x["Total_Away_Points_So_Far"] = self.x.groupby(["Away_Team"])["Away_Points"].cumsum() #cumulative addition of points for each away team
+		self.x["Cumulative_Home_Points"] = self.x["Home_Points"].cumsum() #cumulative sum of home points
+		self.x["Cumulative_Away_Points"] = self.x["Away_Points"].cumsum() #cumulative sum of away points
 
         return self.x
 
