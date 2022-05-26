@@ -1,6 +1,6 @@
 # Football-Match-Outcome-Prediction
 
-Milestone 1
+## Milestone 1
 
 This milestone required downloading Football Match Data from various leagues for the 1990 to 2021 seasons.
 The data was subsequently manipulated by assigning points to teams depending on their match outcome for example and whether they were playing Home or Away, which required splitting the match results and then adding if statements to determine whether the game ended in a win, loss or draw.
@@ -92,7 +92,7 @@ Whilst manipulating the data can help determine some elements such as the bigges
 
 This milestone was relatively straightforward, but the difficulty depended on the level of knowledge for pandas and matplotlib in order to manipulate and analyse the match data as needed. But when this obstacle was overcome, it was quite rewarding to see how data could be analysed and utilised to record any trends and relationships found.
 
-Milestone 2
+## Milestone 2
 
 This milestone concerned manipulating the data and extracting specific data from another file, the latter of which was added to a new dataframe so it could be viewed a lot better. 
 
@@ -152,5 +152,6 @@ def save_to_csv(self): #save dataset as csv
                 data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8')
         
         return "datasets saved to csv" 
+![image](https://user-images.githubusercontent.com/58480783/170560306-45d5811f-08e9-4b37-a868-87b62d7ef041.png)
 
 This milestone was relatively straightforward given some of the objectives were already achieved in the previous milestone; all that was outstanding was extracting the ELO of each team from the pkl file and later saving the new datasets containing the cumulative goals and scores into a csv file. This of course required some of the knowledge gained from developing a webscraper package and some general knowledge of dictionaries.
