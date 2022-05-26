@@ -1,0 +1,381 @@
+Home_Team,Away_Team,Result,Link,Season,Round,League,Home_Goals,Away_Goals,Home_Points,Away_Points,Total_Home_Goals_So_Far,Total_Away_Goals_So_Far,Cumulative_Home_Goals,Cumulative_Away_Goals,Total_Home_Points_So_Far,Total_Away_Points_So_Far,Cumulative_Home_Points,Cumulative_Away_Points
+Sunderland,Tottenham Hotspur,1-0,https://www.besoccer.com/match/sunderland-afc/tottenham-hotspur-fc/20089975,2008,1,premier_league,1,0,3,0,1,0,1,0,3,0,3,0
+Bolton Wanderers,Newcastle,1-3,https://www.besoccer.com/match/bolton-wanderers-fc/newcastle-united-fc/20089971,2008,1,premier_league,1,3,0,3,1,3,2,3,0,3,3,3
+Derby County,Portsmouth,2-2,https://www.besoccer.com/match/derby-county-fc/portsmouth/20089972,2008,1,premier_league,2,2,1,1,2,2,4,5,1,1,4,4
+Everton,Wigan Athletic,2-1,https://www.besoccer.com/match/everton-fc/wigan-athletic/20089973,2008,1,premier_league,2,1,3,0,2,1,6,6,3,0,7,4
+Middlesbrough,Blackburn Rovers,1-2,https://www.besoccer.com/match/middlesbrough-fc/blackburn-rovers-fc/20089974,2008,1,premier_league,1,2,0,3,1,2,7,8,0,3,7,7
+West Ham,Man. City,0-2,https://www.besoccer.com/match/west-ham-united/manchester-city-fc/20089976,2008,1,premier_league,0,2,0,3,0,2,7,10,0,3,7,10
+Aston Villa,Liverpool,1-2,https://www.besoccer.com/match/aston-villa-fc/liverpool/20089970,2008,1,premier_league,1,2,0,3,1,2,8,12,0,3,7,13
+Arsenal,Fulham,2-1,https://www.besoccer.com/match/arsenal/fulham/20089977,2008,1,premier_league,2,1,3,0,2,1,10,13,3,0,10,13
+Chelsea,Birmingham City,3-2,https://www.besoccer.com/match/chelsea-fc/birmingham-city-fc/20089978,2008,1,premier_league,3,2,3,0,3,2,13,15,3,0,13,13
+Man. Utd,Reading,0-0,https://www.besoccer.com/match/manchester-united-fc/reading-fc/20089979,2008,1,premier_league,0,0,1,1,0,0,13,15,1,1,14,14
+Tottenham Hotspur,Everton,1-3,https://www.besoccer.com/match/tottenham-hotspur-fc/everton-fc/20089980,2008,2,premier_league,1,3,0,3,1,3,14,18,0,3,14,17
+Birmingham City,Sunderland,2-2,https://www.besoccer.com/match/birmingham-city-fc/sunderland-afc/20089981,2008,2,premier_league,2,2,1,1,2,2,16,20,1,1,15,18
+Fulham,Bolton Wanderers,2-1,https://www.besoccer.com/match/fulham/bolton-wanderers-fc/20089982,2008,2,premier_league,2,1,3,0,2,1,18,21,3,0,18,18
+Man. City,Derby County,1-0,https://www.besoccer.com/match/manchester-city-fc/derby-county-fc/20089983,2008,2,premier_league,1,0,3,0,1,0,19,21,3,0,21,18
+Portsmouth,Man. Utd,1-1,https://www.besoccer.com/match/portsmouth/manchester-united-fc/20089984,2008,2,premier_league,1,1,1,1,1,1,20,22,1,1,22,19
+Reading,Chelsea,1-2,https://www.besoccer.com/match/reading-fc/chelsea-fc/20089985,2008,2,premier_league,1,2,0,3,1,2,21,24,0,3,22,22
+Wigan Athletic,Middlesbrough,1-0,https://www.besoccer.com/match/wigan-athletic/middlesbrough-fc/20089986,2008,2,premier_league,1,0,3,0,1,0,22,24,3,0,25,22
+Blackburn Rovers,Aston Villa,0-4,https://www.besoccer.com/match/blackburn-rovers-fc/aston-villa-fc/20089987,2008,2,premier_league,0,4,0,3,0,4,22,28,0,3,25,25
+Newcastle,Arsenal,1-1,https://www.besoccer.com/match/newcastle-united-fc/arsenal/20089988,2008,2,premier_league,1,1,1,1,1,1,23,29,1,1,26,26
+Liverpool,West Ham,4-0,https://www.besoccer.com/match/liverpool/west-ham-united/20089989,2008,2,premier_league,4,0,3,0,4,0,27,29,3,0,29,26
+Portsmouth,Bolton Wanderers,3-1,https://www.besoccer.com/match/portsmouth/bolton-wanderers-fc/20089993,2008,3,premier_league,3,1,3,0,4,2,30,30,4,0,32,26
+Birmingham City,West Ham,0-1,https://www.besoccer.com/match/birmingham-city-fc/west-ham-united/20089990,2008,3,premier_league,0,1,0,3,2,3,30,31,1,3,32,29
+Fulham,Middlesbrough,1-2,https://www.besoccer.com/match/fulham/middlesbrough-fc/20089991,2008,3,premier_league,1,2,0,3,3,3,31,33,3,3,32,32
+Reading,Everton,1-0,https://www.besoccer.com/match/reading-fc/everton-fc/20089994,2008,3,premier_league,1,0,3,0,2,2,32,33,3,3,35,32
+Tottenham Hotspur,Derby County,4-0,https://www.besoccer.com/match/tottenham-hotspur-fc/derby-county-fc/20089995,2008,3,premier_league,4,0,3,0,5,3,36,33,3,0,38,32
+Wigan Athletic,Sunderland,3-0,https://www.besoccer.com/match/wigan-athletic/sunderland-afc/20089996,2008,3,premier_league,3,0,3,0,4,0,39,33,6,1,41,32
+Newcastle,Aston Villa,0-0,https://www.besoccer.com/match/newcastle-united-fc/aston-villa-fc/20089992,2008,3,premier_league,0,0,1,1,1,1,39,33,2,4,42,33
+Man. City,Man. Utd,1-0,https://www.besoccer.com/match/manchester-city-fc/manchester-united-fc/20089999,2008,3,premier_league,1,0,3,0,2,0,40,33,6,1,45,33
+Blackburn Rovers,Arsenal,1-1,https://www.besoccer.com/match/blackburn-rovers-fc/arsenal/20089997,2008,3,premier_league,1,1,1,1,1,5,41,34,1,2,46,34
+Liverpool,Chelsea,1-1,https://www.besoccer.com/match/liverpool/chelsea-fc/20089998,2008,3,premier_league,1,1,1,1,5,1,42,35,4,4,47,35
+Sunderland,Liverpool,0-2,https://www.besoccer.com/match/sunderland-afc/liverpool/200810006,2008,4,premier_league,0,2,0,3,1,2,42,37,3,6,47,38
+Arsenal,Man. City,1-0,https://www.besoccer.com/match/arsenal/manchester-city-fc/200810000,2008,4,premier_league,1,0,3,0,3,1,43,37,6,3,50,38
+Aston Villa,Fulham,2-1,https://www.besoccer.com/match/aston-villa-fc/fulham/200810001,2008,4,premier_league,2,1,3,0,3,3,45,38,3,0,53,38
+Bolton Wanderers,Reading,3-0,https://www.besoccer.com/match/bolton-wanderers-fc/reading-fc/200810002,2008,4,premier_league,3,0,3,0,4,3,48,38,3,1,56,38
+Chelsea,Portsmouth,1-0,https://www.besoccer.com/match/chelsea-fc/portsmouth/200810003,2008,4,premier_league,1,0,3,0,4,2,49,38,6,1,59,38
+Derby County,Birmingham City,1-2,https://www.besoccer.com/match/derby-county-fc/birmingham-city-fc/200810004,2008,4,premier_league,1,2,0,3,3,4,50,40,1,3,59,41
+West Ham,Wigan Athletic,1-1,https://www.besoccer.com/match/west-ham-united/wigan-athletic/200810007,2008,4,premier_league,1,1,1,1,1,3,51,41,1,1,60,42
+Everton,Blackburn Rovers,1-1,https://www.besoccer.com/match/everton-fc/blackburn-rovers-fc/200810005,2008,4,premier_league,1,1,1,1,3,2,52,42,4,4,61,43
+Middlesbrough,Newcastle,2-2,https://www.besoccer.com/match/middlesbrough-fc/newcastle-united-fc/200810009,2008,4,premier_league,2,2,1,1,3,4,54,44,1,4,62,44
+Man. Utd,Tottenham Hotspur,1-0,https://www.besoccer.com/match/manchester-united-fc/tottenham-hotspur-fc/200810008,2008,4,premier_league,1,0,3,0,1,0,55,44,4,0,65,44
+Bolton Wanderers,Everton,1-2,https://www.besoccer.com/match/bolton-wanderers-fc/everton-fc/200810010,2008,5,premier_league,1,2,0,3,5,5,56,46,3,6,65,47
+Fulham,Tottenham Hotspur,3-3,https://www.besoccer.com/match/fulham/tottenham-hotspur-fc/200810011,2008,5,premier_league,3,3,1,1,6,6,59,49,4,1,66,48
+Liverpool,Derby County,6-0,https://www.besoccer.com/match/liverpool/derby-county-fc/200810012,2008,5,premier_league,6,0,3,0,11,1,65,49,7,0,69,48
+Middlesbrough,Birmingham City,2-0,https://www.besoccer.com/match/middlesbrough-fc/birmingham-city-fc/200810014,2008,5,premier_league,2,0,3,0,5,4,67,49,4,3,72,48
+Newcastle,Wigan Athletic,1-0,https://www.besoccer.com/match/newcastle-united-fc/wigan-athletic/200810015,2008,5,premier_league,1,0,3,0,2,1,68,49,5,1,75,48
+Reading,West Ham,0-3,https://www.besoccer.com/match/reading-fc/west-ham-united/200810016,2008,5,premier_league,0,3,0,3,2,5,68,52,3,6,75,51
+Man. Utd,Sunderland,1-0,https://www.besoccer.com/match/manchester-united-fc/sunderland-afc/200810013,2008,5,premier_league,1,0,3,0,2,0,69,52,7,1,78,51
+Arsenal,Portsmouth,3-1,https://www.besoccer.com/match/arsenal/portsmouth/200810017,2008,5,premier_league,3,1,3,0,6,2,72,53,9,1,81,51
+Blackburn Rovers,Man. City,1-0,https://www.besoccer.com/match/blackburn-rovers-fc/manchester-city-fc/200810019,2008,5,premier_league,1,0,3,0,2,5,73,53,4,3,84,51
+Aston Villa,Chelsea,2-0,https://www.besoccer.com/match/aston-villa-fc/chelsea-fc/200810018,2008,5,premier_league,2,0,3,0,5,3,75,53,6,4,87,51
+Everton,Man. Utd,0-1,https://www.besoccer.com/match/everton-fc/manchester-united-fc/200810022,2008,6,premier_league,0,1,0,3,3,3,75,54,4,4,87,54
+Portsmouth,Liverpool,0-0,https://www.besoccer.com/match/portsmouth/liverpool/200810023,2008,6,premier_league,0,0,1,1,4,2,75,54,5,7,88,55
+Tottenham Hotspur,Arsenal,1-3,https://www.besoccer.com/match/tottenham-hotspur-fc/arsenal/200810025,2008,6,premier_league,1,3,0,3,6,6,76,57,3,5,88,58
+Birmingham City,Bolton Wanderers,1-0,https://www.besoccer.com/match/birmingham-city-fc/bolton-wanderers-fc/200810020,2008,6,premier_league,1,0,3,0,3,3,77,57,4,0,91,58
+Sunderland,Reading,2-1,https://www.besoccer.com/match/sunderland-afc/reading-fc/200810024,2008,6,premier_league,2,1,3,0,3,3,79,58,6,1,94,58
+West Ham,Middlesbrough,3-0,https://www.besoccer.com/match/west-ham-united/middlesbrough-fc/200810026,2008,6,premier_league,3,0,3,0,4,3,82,58,4,3,97,58
+Wigan Athletic,Fulham,1-1,https://www.besoccer.com/match/wigan-athletic/fulham/200810027,2008,6,premier_league,1,1,1,1,5,1,83,59,7,1,98,59
+Chelsea,Blackburn Rovers,0-0,https://www.besoccer.com/match/chelsea-fc/blackburn-rovers-fc/200810021,2008,6,premier_league,0,0,1,1,4,2,83,59,7,5,99,60
+Man. City,Aston Villa,1-0,https://www.besoccer.com/match/manchester-city-fc/aston-villa-fc/200810028,2008,6,premier_league,1,0,3,0,3,0,84,59,9,4,102,60
+Derby County,Newcastle,1-0,https://www.besoccer.com/match/derby-county-fc/newcastle-united-fc/200810029,2008,6,premier_league,1,0,3,0,4,4,85,59,4,4,105,60
+Arsenal,Derby County,5-0,https://www.besoccer.com/match/arsenal/derby-county-fc/200810030,2008,7,premier_league,5,0,3,0,11,2,90,59,12,0,108,60
+Liverpool,Birmingham City,0-0,https://www.besoccer.com/match/liverpool/birmingham-city-fc/200810032,2008,7,premier_league,0,0,1,1,11,1,90,59,8,4,109,61
+Middlesbrough,Sunderland,2-2,https://www.besoccer.com/match/middlesbrough-fc/sunderland-afc/200810033,2008,7,premier_league,2,2,1,1,7,6,92,61,5,2,110,62
+Reading,Wigan Athletic,2-1,https://www.besoccer.com/match/reading-fc/wigan-athletic/200810034,2008,7,premier_league,2,1,3,0,4,6,94,62,6,1,113,62
+Fulham,Man. City,3-3,https://www.besoccer.com/match/fulham/manchester-city-fc/200810031,2008,7,premier_league,3,3,1,1,9,9,97,65,5,4,114,63
+Newcastle,West Ham,3-1,https://www.besoccer.com/match/newcastle-united-fc/west-ham-united/200810039,2008,7,premier_league,3,1,3,0,5,2,100,66,8,6,117,63
+Aston Villa,Everton,2-0,https://www.besoccer.com/match/aston-villa-fc/everton-fc/200810035,2008,7,premier_league,2,0,3,0,7,3,102,66,9,6,120,63
+Blackburn Rovers,Portsmouth,0-1,https://www.besoccer.com/match/blackburn-rovers-fc/portsmouth/200810036,2008,7,premier_league,0,1,0,3,2,6,102,67,4,4,120,66
+Bolton Wanderers,Tottenham Hotspur,1-1,https://www.besoccer.com/match/bolton-wanderers-fc/tottenham-hotspur-fc/200810037,2008,7,premier_league,1,1,1,1,6,6,103,68,4,2,121,67
+Man. Utd,Chelsea,2-0,https://www.besoccer.com/match/manchester-united-fc/chelsea-fc/200810038,2008,7,premier_league,2,0,3,0,4,0,105,68,10,4,124,67
+Man. City,Newcastle,3-1,https://www.besoccer.com/match/manchester-city-fc/newcastle-united-fc/200810043,2008,8,premier_league,3,1,3,0,6,1,108,69,12,4,127,67
+Chelsea,Fulham,0-0,https://www.besoccer.com/match/chelsea-fc/fulham/200810041,2008,8,premier_league,0,0,1,1,4,2,108,69,8,2,128,68
+Derby County,Bolton Wanderers,1-1,https://www.besoccer.com/match/derby-county-fc/bolton-wanderers-fc/200810042,2008,8,premier_league,1,1,1,1,5,5,109,70,5,1,129,69
+Portsmouth,Reading,7-4,https://www.besoccer.com/match/portsmouth/reading-fc/200810044,2008,8,premier_league,7,4,3,0,11,6,116,74,8,1,132,69
+Sunderland,Blackburn Rovers,1-2,https://www.besoccer.com/match/sunderland-afc/blackburn-rovers-fc/200810045,2008,8,premier_league,1,2,0,3,4,5,117,76,6,8,132,72
+West Ham,Arsenal,0-1,https://www.besoccer.com/match/west-ham-united/arsenal/200810046,2008,8,premier_league,0,1,0,3,4,4,117,77,4,8,132,75
+Wigan Athletic,Liverpool,0-1,https://www.besoccer.com/match/wigan-athletic/liverpool/200810047,2008,8,premier_league,0,1,0,3,5,2,117,78,7,10,132,78
+Birmingham City,Man. Utd,0-1,https://www.besoccer.com/match/birmingham-city-fc/manchester-united-fc/200810040,2008,8,premier_league,0,1,0,3,3,4,117,79,4,7,132,81
+Everton,Middlesbrough,2-0,https://www.besoccer.com/match/everton-fc/middlesbrough-fc/200810048,2008,8,premier_league,2,0,3,0,5,3,119,79,7,3,135,81
+Tottenham Hotspur,Aston Villa,4-4,https://www.besoccer.com/match/tottenham-hotspur-fc/aston-villa-fc/200810049,2008,8,premier_league,4,4,1,1,10,10,123,83,4,5,136,82
+Man. Utd,Wigan Athletic,4-0,https://www.besoccer.com/match/manchester-united-fc/wigan-athletic/200810051,2008,9,premier_league,4,0,3,0,8,0,127,83,13,1,139,82
+Aston Villa,West Ham,1-0,https://www.besoccer.com/match/aston-villa-fc/west-ham-united/200810050,2008,9,premier_league,1,0,3,0,8,3,128,83,12,6,142,82
+Arsenal,Sunderland,3-2,https://www.besoccer.com/match/arsenal/sunderland-afc/200810052,2008,9,premier_league,3,2,3,0,14,4,131,85,15,2,145,82
+Reading,Derby County,1-0,https://www.besoccer.com/match/reading-fc/derby-county-fc/200810059,2008,9,premier_league,1,0,3,0,5,6,132,85,9,0,148,82
+Blackburn Rovers,Birmingham City,2-1,https://www.besoccer.com/match/blackburn-rovers-fc/birmingham-city-fc/200810053,2008,9,premier_league,2,1,3,0,4,7,134,86,7,4,151,82
+Bolton Wanderers,Chelsea,0-1,https://www.besoccer.com/match/bolton-wanderers-fc/chelsea-fc/200810054,2008,9,premier_league,0,1,0,3,6,7,134,87,4,7,151,85
+Liverpool,Tottenham Hotspur,2-2,https://www.besoccer.com/match/liverpool/tottenham-hotspur-fc/200810056,2008,9,premier_league,2,2,1,1,13,3,136,89,9,3,152,86
+Man. City,Middlesbrough,3-1,https://www.besoccer.com/match/manchester-city-fc/middlesbrough-fc/200810057,2008,9,premier_league,3,1,3,0,9,2,139,90,15,3,155,86
+Newcastle,Everton,3-2,https://www.besoccer.com/match/newcastle-united-fc/everton-fc/200810058,2008,9,premier_league,3,2,3,0,8,4,142,92,11,6,158,86
+Fulham,Portsmouth,0-2,https://www.besoccer.com/match/fulham/portsmouth/200810055,2008,9,premier_league,0,2,0,3,9,11,142,94,5,7,158,89
+Everton,Liverpool,1-2,https://www.besoccer.com/match/everton-fc/liverpool/200810063,2008,10,premier_league,1,2,0,3,6,5,143,96,7,13,158,92
+Arsenal,Bolton Wanderers,2-0,https://www.besoccer.com/match/arsenal/bolton-wanderers-fc/200810060,2008,10,premier_league,2,0,3,0,16,4,145,96,18,1,161,92
+Blackburn Rovers,Reading,4-2,https://www.besoccer.com/match/blackburn-rovers-fc/reading-fc/200810062,2008,10,premier_league,4,2,3,0,8,9,149,98,10,1,164,92
+Fulham,Derby County,0-0,https://www.besoccer.com/match/fulham/derby-county-fc/200810064,2008,10,premier_league,0,0,1,1,9,11,149,98,6,1,165,93
+Man. City,Birmingham City,1-0,https://www.besoccer.com/match/manchester-city-fc/birmingham-city-fc/200810065,2008,10,premier_league,1,0,3,0,10,2,150,98,18,4,168,93
+Middlesbrough,Chelsea,0-2,https://www.besoccer.com/match/middlesbrough-fc/chelsea-fc/200810066,2008,10,premier_league,0,2,0,3,7,8,150,100,5,10,168,96
+Wigan Athletic,Portsmouth,0-2,https://www.besoccer.com/match/wigan-athletic/portsmouth/200810067,2008,10,premier_league,0,2,0,3,5,4,150,102,7,10,168,99
+Aston Villa,Man. Utd,1-4,https://www.besoccer.com/match/aston-villa-fc/manchester-united-fc/200810061,2008,10,premier_league,1,4,0,3,9,7,151,106,12,10,168,102
+West Ham,Sunderland,3-1,https://www.besoccer.com/match/west-ham-united/sunderland-afc/200810068,2008,10,premier_league,3,1,3,0,7,5,154,107,7,2,171,102
+Newcastle,Tottenham Hotspur,3-1,https://www.besoccer.com/match/newcastle-united-fc/tottenham-hotspur-fc/200810069,2008,10,premier_league,3,1,3,0,11,5,157,108,14,3,174,102
+Birmingham City,Wigan Athletic,3-2,https://www.besoccer.com/match/birmingham-city-fc/wigan-athletic/200810070,2008,11,premier_league,3,2,3,0,6,6,160,110,7,1,177,102
+Chelsea,Man. City,6-0,https://www.besoccer.com/match/chelsea-fc/manchester-city-fc/200810071,2008,11,premier_league,6,0,3,0,10,2,166,110,11,4,180,102
+Man. Utd,Middlesbrough,4-1,https://www.besoccer.com/match/manchester-united-fc/middlesbrough-fc/200810072,2008,11,premier_league,4,1,3,0,12,1,170,111,16,3,183,102
+Reading,Newcastle,2-1,https://www.besoccer.com/match/reading-fc/newcastle-united-fc/200810074,2008,11,premier_league,2,1,3,0,7,7,172,112,12,4,186,102
+Sunderland,Fulham,1-1,https://www.besoccer.com/match/sunderland-afc/fulham/200810075,2008,11,premier_league,1,1,1,1,5,6,173,113,7,3,187,103
+Portsmouth,West Ham,0-0,https://www.besoccer.com/match/portsmouth/west-ham-united/200810073,2008,11,premier_league,0,0,1,1,11,6,173,113,9,7,188,104
+Bolton Wanderers,Aston Villa,1-1,https://www.besoccer.com/match/bolton-wanderers-fc/aston-villa-fc/200810076,2008,11,premier_league,1,1,1,1,7,8,174,114,5,6,189,105
+Derby County,Everton,0-2,https://www.besoccer.com/match/derby-county-fc/everton-fc/200810077,2008,11,premier_league,0,2,0,3,5,7,174,116,5,9,189,108
+Tottenham Hotspur,Blackburn Rovers,1-2,https://www.besoccer.com/match/tottenham-hotspur-fc/blackburn-rovers-fc/200810079,2008,11,premier_league,1,2,0,3,11,12,175,118,4,11,189,111
+Liverpool,Arsenal,1-1,https://www.besoccer.com/match/liverpool/arsenal/200810078,2008,11,premier_league,1,1,1,1,14,4,176,119,10,9,190,112
+Arsenal,Man. Utd,2-2,https://www.besoccer.com/match/arsenal/manchester-united-fc/200810080,2008,12,premier_league,2,2,1,1,18,6,178,121,19,11,191,113
+Aston Villa,Derby County,2-0,https://www.besoccer.com/match/aston-villa-fc/derby-county-fc/200810081,2008,12,premier_league,2,0,3,0,11,7,180,121,15,1,194,113
+Everton,Birmingham City,3-1,https://www.besoccer.com/match/everton-fc/birmingham-city-fc/200810083,2008,12,premier_league,3,1,3,0,9,6,183,122,10,4,197,113
+Fulham,Reading,3-1,https://www.besoccer.com/match/fulham/reading-fc/200810084,2008,12,premier_league,3,1,3,0,12,12,186,123,9,1,200,113
+Middlesbrough,Tottenham Hotspur,1-1,https://www.besoccer.com/match/middlesbrough-fc/tottenham-hotspur-fc/200810085,2008,12,premier_league,1,1,1,1,8,9,187,124,6,4,201,114
+Newcastle,Portsmouth,1-4,https://www.besoccer.com/match/newcastle-united-fc/portsmouth/200810086,2008,12,premier_league,1,4,0,3,12,9,188,128,14,13,201,117
+Wigan Athletic,Chelsea,0-2,https://www.besoccer.com/match/wigan-athletic/chelsea-fc/200810087,2008,12,premier_league,0,2,0,3,5,6,188,130,7,13,201,120
+Blackburn Rovers,Liverpool,0-0,https://www.besoccer.com/match/blackburn-rovers-fc/liverpool/200810082,2008,12,premier_league,0,0,1,1,8,9,188,130,11,14,202,121
+West Ham,Bolton Wanderers,1-1,https://www.besoccer.com/match/west-ham-united/bolton-wanderers-fc/200810088,2008,12,premier_league,1,1,1,1,8,6,189,131,8,2,203,122
+Man. City,Sunderland,1-0,https://www.besoccer.com/match/manchester-city-fc/sunderland-afc/200810089,2008,12,premier_league,1,0,3,0,11,2,190,131,21,2,206,122
+Sunderland,Newcastle,1-1,https://www.besoccer.com/match/sunderland-afc/newcastle-united-fc/200810092,2008,13,premier_league,1,1,1,1,6,7,191,132,8,5,207,123
+Derby County,West Ham,0-5,https://www.besoccer.com/match/derby-county-fc/west-ham-united/200810090,2008,13,premier_league,0,5,0,3,5,12,191,137,5,10,207,126
+Liverpool,Fulham,2-0,https://www.besoccer.com/match/liverpool/fulham/200810091,2008,13,premier_league,2,0,3,0,16,4,193,137,13,3,210,126
+Birmingham City,Aston Villa,1-2,https://www.besoccer.com/match/birmingham-city-fc/aston-villa-fc/200810093,2008,13,premier_league,1,2,0,3,7,8,194,139,7,9,210,129
+Chelsea,Everton,1-1,https://www.besoccer.com/match/chelsea-fc/everton-fc/200810095,2008,13,premier_league,1,1,1,1,11,3,195,140,12,10,211,130
+Bolton Wanderers,Middlesbrough,0-0,https://www.besoccer.com/match/bolton-wanderers-fc/middlesbrough-fc/200810094,2008,13,premier_league,0,0,1,1,7,8,195,140,6,4,212,131
+Man. Utd,Blackburn Rovers,2-0,https://www.besoccer.com/match/manchester-united-fc/blackburn-rovers-fc/200810096,2008,13,premier_league,2,0,3,0,14,1,197,140,19,11,215,131
+Tottenham Hotspur,Wigan Athletic,4-0,https://www.besoccer.com/match/tottenham-hotspur-fc/wigan-athletic/200810098,2008,13,premier_league,4,0,3,0,15,12,201,140,7,1,218,131
+Portsmouth,Man. City,0-0,https://www.besoccer.com/match/portsmouth/manchester-city-fc/200810097,2008,13,premier_league,0,0,1,1,11,6,201,140,10,5,219,132
+Reading,Arsenal,1-3,https://www.besoccer.com/match/reading-fc/arsenal/200810099,2008,13,premier_league,1,3,0,3,8,10,202,143,12,12,219,135
+Newcastle,Liverpool,0-3,https://www.besoccer.com/match/newcastle-united-fc/liverpool/200810107,2008,14,premier_league,0,3,0,3,12,12,202,146,14,17,219,138
+Arsenal,Wigan Athletic,2-0,https://www.besoccer.com/match/arsenal/wigan-athletic/200810100,2008,14,premier_league,2,0,3,0,20,6,204,146,22,1,222,138
+Birmingham City,Portsmouth,0-2,https://www.besoccer.com/match/birmingham-city-fc/portsmouth/200810101,2008,14,premier_league,0,2,0,3,7,10,204,148,7,16,222,141
+Bolton Wanderers,Man. Utd,1-0,https://www.besoccer.com/match/bolton-wanderers-fc/manchester-united-fc/200810102,2008,14,premier_league,1,0,3,0,8,8,205,148,9,11,225,141
+Everton,Sunderland,7-1,https://www.besoccer.com/match/everton-fc/sunderland-afc/200810104,2008,14,premier_league,7,1,3,0,16,7,212,149,13,2,228,141
+Man. City,Reading,2-1,https://www.besoccer.com/match/manchester-city-fc/reading-fc/200810105,2008,14,premier_league,2,1,3,0,13,3,214,150,24,1,231,141
+Middlesbrough,Aston Villa,0-3,https://www.besoccer.com/match/middlesbrough-fc/aston-villa-fc/200810106,2008,14,premier_league,0,3,0,3,8,12,214,153,6,12,231,144
+Derby County,Chelsea,0-2,https://www.besoccer.com/match/derby-county-fc/chelsea-fc/200810103,2008,14,premier_league,0,2,0,3,5,14,214,155,5,16,231,147
+West Ham,Tottenham Hotspur,1-1,https://www.besoccer.com/match/west-ham-united/tottenham-hotspur-fc/200810109,2008,14,premier_league,1,1,1,1,9,7,215,156,9,5,232,148
+Fulham,Blackburn Rovers,2-2,https://www.besoccer.com/match/fulham/blackburn-rovers-fc/200810108,2008,14,premier_league,2,2,1,1,14,14,217,158,10,12,233,149
+Chelsea,West Ham,1-0,https://www.besoccer.com/match/chelsea-fc/west-ham-united/200810112,2008,15,premier_league,1,0,3,0,12,3,218,158,15,10,236,149
+Blackburn Rovers,Newcastle,3-1,https://www.besoccer.com/match/blackburn-rovers-fc/newcastle-united-fc/200810111,2008,15,premier_league,3,1,3,0,11,10,221,159,14,5,239,149
+Portsmouth,Everton,0-0,https://www.besoccer.com/match/portsmouth/everton-fc/200810113,2008,15,premier_league,0,0,1,1,11,6,221,159,11,11,240,150
+Reading,Middlesbrough,1-1,https://www.besoccer.com/match/reading-fc/middlesbrough-fc/200810114,2008,15,premier_league,1,1,1,1,9,11,222,160,13,5,241,151
+Sunderland,Derby County,1-0,https://www.besoccer.com/match/sunderland-afc/derby-county-fc/200810115,2008,15,premier_league,1,0,3,0,7,7,223,160,11,1,244,151
+Wigan Athletic,Man. City,1-1,https://www.besoccer.com/match/wigan-athletic/manchester-city-fc/200810116,2008,15,premier_league,1,1,1,1,6,7,224,161,8,6,245,152
+Aston Villa,Arsenal,1-2,https://www.besoccer.com/match/aston-villa-fc/arsenal/200810110,2008,15,premier_league,1,2,0,3,12,9,225,163,15,15,245,155
+Liverpool,Bolton Wanderers,4-0,https://www.besoccer.com/match/liverpool/bolton-wanderers-fc/200810117,2008,15,premier_league,4,0,3,0,20,4,229,163,16,2,248,155
+Tottenham Hotspur,Birmingham City,2-3,https://www.besoccer.com/match/tottenham-hotspur-fc/birmingham-city-fc/200810118,2008,15,premier_league,2,3,0,3,17,15,231,166,7,7,248,158
+Man. Utd,Fulham,2-0,https://www.besoccer.com/match/manchester-united-fc/fulham/200810119,2008,15,premier_league,2,0,3,0,16,1,233,166,22,3,251,158
+Aston Villa,Portsmouth,1-3,https://www.besoccer.com/match/aston-villa-fc/portsmouth/200810120,2008,16,premier_league,1,3,0,3,13,12,234,169,15,19,251,161
+Chelsea,Sunderland,2-0,https://www.besoccer.com/match/chelsea-fc/sunderland-afc/200810121,2008,16,premier_league,2,0,3,0,14,3,236,169,18,2,254,161
+Everton,Fulham,3-0,https://www.besoccer.com/match/everton-fc/fulham/200810122,2008,16,premier_league,3,0,3,0,19,7,239,169,16,3,257,161
+Man. Utd,Derby County,4-1,https://www.besoccer.com/match/manchester-united-fc/derby-county-fc/200810123,2008,16,premier_league,4,1,3,0,20,2,243,170,25,1,260,161
+Newcastle,Birmingham City,2-1,https://www.besoccer.com/match/newcastle-united-fc/birmingham-city-fc/200810124,2008,16,premier_league,2,1,3,0,14,13,245,171,17,7,263,161
+Reading,Liverpool,3-1,https://www.besoccer.com/match/reading-fc/liverpool/200810125,2008,16,premier_league,3,1,3,0,12,12,248,172,16,17,266,161
+Middlesbrough,Arsenal,2-1,https://www.besoccer.com/match/middlesbrough-fc/arsenal/200810128,2008,16,premier_league,2,1,3,0,10,13,250,173,9,15,269,161
+Bolton Wanderers,Wigan Athletic,4-1,https://www.besoccer.com/match/bolton-wanderers-fc/wigan-athletic/200810127,2008,16,premier_league,4,1,3,0,12,9,254,174,12,1,272,161
+Tottenham Hotspur,Man. City,2-1,https://www.besoccer.com/match/tottenham-hotspur-fc/manchester-city-fc/200810129,2008,16,premier_league,2,1,3,0,19,16,256,175,10,6,275,161
+Blackburn Rovers,West Ham,0-1,https://www.besoccer.com/match/blackburn-rovers-fc/west-ham-united/200810126,2008,16,premier_league,0,1,0,3,11,11,256,176,14,13,275,164
+Birmingham City,Reading,1-1,https://www.besoccer.com/match/birmingham-city-fc/reading-fc/200810130,2008,17,premier_league,1,1,1,1,8,11,257,177,8,2,276,165
+Derby County,Middlesbrough,0-1,https://www.besoccer.com/match/derby-county-fc/middlesbrough-fc/200810131,2008,17,premier_league,0,1,0,3,5,15,257,178,5,8,276,168
+Man. City,Bolton Wanderers,4-2,https://www.besoccer.com/match/manchester-city-fc/bolton-wanderers-fc/200810133,2008,17,premier_league,4,2,3,0,17,5,261,180,27,2,279,168
+Portsmouth,Tottenham Hotspur,0-1,https://www.besoccer.com/match/portsmouth/tottenham-hotspur-fc/200810134,2008,17,premier_league,0,1,0,3,11,7,261,181,11,8,279,171
+Sunderland,Aston Villa,1-1,https://www.besoccer.com/match/sunderland-afc/aston-villa-fc/200810135,2008,17,premier_league,1,1,1,1,8,8,262,182,12,13,280,172
+West Ham,Everton,0-2,https://www.besoccer.com/match/west-ham-united/everton-fc/200810136,2008,17,premier_league,0,2,0,3,9,9,262,184,9,14,280,175
+Wigan Athletic,Blackburn Rovers,5-3,https://www.besoccer.com/match/wigan-athletic/blackburn-rovers-fc/200810137,2008,17,premier_league,5,3,3,0,11,10,267,187,11,12,283,175
+Fulham,Newcastle,0-1,https://www.besoccer.com/match/fulham/newcastle-united-fc/200810132,2008,17,premier_league,0,1,0,3,14,15,267,188,10,8,283,178
+Liverpool,Man. Utd,0-1,https://www.besoccer.com/match/liverpool/manchester-united-fc/200810139,2008,17,premier_league,0,1,0,3,20,5,267,189,16,14,283,181
+Arsenal,Chelsea,1-0,https://www.besoccer.com/match/arsenal/chelsea-fc/200810138,2008,17,premier_league,1,0,3,0,21,6,268,189,25,16,286,181
+Arsenal,Tottenham Hotspur,2-1,https://www.besoccer.com/match/arsenal/tottenham-hotspur-fc/200810140,2008,18,premier_league,2,1,3,0,23,7,270,190,28,8,289,181
+Aston Villa,Man. City,1-1,https://www.besoccer.com/match/aston-villa-fc/manchester-city-fc/200810141,2008,18,premier_league,1,1,1,1,14,13,271,191,16,7,290,182
+Bolton Wanderers,Birmingham City,3-0,https://www.besoccer.com/match/bolton-wanderers-fc/birmingham-city-fc/200810142,2008,18,premier_league,3,0,3,0,15,9,274,191,15,7,293,182
+Fulham,Wigan Athletic,1-1,https://www.besoccer.com/match/fulham/wigan-athletic/200810143,2008,18,premier_league,1,1,1,1,15,16,275,192,11,2,294,183
+Liverpool,Portsmouth,4-1,https://www.besoccer.com/match/liverpool/portsmouth/200810144,2008,18,premier_league,4,1,3,0,24,6,279,193,19,19,297,183
+Middlesbrough,West Ham,1-2,https://www.besoccer.com/match/middlesbrough-fc/west-ham-united/200810145,2008,18,premier_league,1,2,0,3,11,15,280,195,9,16,297,186
+Reading,Sunderland,2-1,https://www.besoccer.com/match/reading-fc/sunderland-afc/200810146,2008,18,premier_league,2,1,3,0,14,13,282,196,19,2,300,186
+Man. Utd,Everton,2-1,https://www.besoccer.com/match/manchester-united-fc/everton-fc/200810148,2008,18,premier_league,2,1,3,0,22,3,284,197,28,14,303,186
+Newcastle,Derby County,2-2,https://www.besoccer.com/match/newcastle-united-fc/derby-county-fc/200810149,2008,18,premier_league,2,2,1,1,16,15,286,199,18,2,304,187
+Blackburn Rovers,Chelsea,0-1,https://www.besoccer.com/match/blackburn-rovers-fc/chelsea-fc/200810147,2008,18,premier_league,0,1,0,3,11,12,286,200,14,19,304,190
+Tottenham Hotspur,Fulham,5-1,https://www.besoccer.com/match/tottenham-hotspur-fc/fulham/200810156,2008,19,premier_league,5,1,3,0,24,17,291,201,13,3,307,190
+Chelsea,Aston Villa,4-4,https://www.besoccer.com/match/chelsea-fc/aston-villa-fc/200810151,2008,19,premier_league,4,4,1,1,18,7,295,205,19,14,308,191
+West Ham,Reading,1-1,https://www.besoccer.com/match/west-ham-united/reading-fc/200810157,2008,19,premier_league,1,1,1,1,10,10,296,206,10,3,309,192
+Birmingham City,Middlesbrough,3-0,https://www.besoccer.com/match/birmingham-city-fc/middlesbrough-fc/200810150,2008,19,premier_league,3,0,3,0,11,11,299,206,11,8,312,192
+Derby County,Liverpool,1-2,https://www.besoccer.com/match/derby-county-fc/liverpool/200810152,2008,19,premier_league,1,2,0,3,6,17,300,208,5,20,312,195
+Everton,Bolton Wanderers,2-0,https://www.besoccer.com/match/everton-fc/bolton-wanderers-fc/200810153,2008,19,premier_league,2,0,3,0,21,7,302,208,19,2,315,195
+Sunderland,Man. Utd,0-4,https://www.besoccer.com/match/sunderland-afc/manchester-united-fc/200810155,2008,19,premier_league,0,4,0,3,8,12,302,212,12,17,315,198
+Wigan Athletic,Newcastle,1-0,https://www.besoccer.com/match/wigan-athletic/newcastle-united-fc/200810158,2008,19,premier_league,1,0,3,0,12,10,303,212,14,8,318,198
+Portsmouth,Arsenal,0-0,https://www.besoccer.com/match/portsmouth/arsenal/200810154,2008,19,premier_league,0,0,1,1,11,7,303,212,12,16,319,199
+Man. City,Blackburn Rovers,2-2,https://www.besoccer.com/match/manchester-city-fc/blackburn-rovers-fc/200810159,2008,19,premier_league,2,2,1,1,19,7,305,214,28,13,320,200
+Birmingham City,Fulham,1-1,https://www.besoccer.com/match/birmingham-city-fc/fulham/200810160,2008,20,premier_league,1,1,1,1,12,12,306,215,12,4,321,201
+Chelsea,Newcastle,2-1,https://www.besoccer.com/match/chelsea-fc/newcastle-united-fc/200810161,2008,20,premier_league,2,1,3,0,20,8,308,216,22,8,324,201
+Portsmouth,Middlesbrough,0-1,https://www.besoccer.com/match/portsmouth/middlesbrough-fc/200810163,2008,20,premier_league,0,1,0,3,11,8,308,217,12,11,324,204
+Sunderland,Bolton Wanderers,3-1,https://www.besoccer.com/match/sunderland-afc/bolton-wanderers-fc/200810164,2008,20,premier_league,3,1,3,0,11,13,311,218,15,2,327,204
+Tottenham Hotspur,Reading,6-4,https://www.besoccer.com/match/tottenham-hotspur-fc/reading-fc/200810165,2008,20,premier_league,6,4,3,0,30,21,317,222,16,3,330,204
+West Ham,Man. Utd,2-1,https://www.besoccer.com/match/west-ham-united/manchester-united-fc/200810166,2008,20,premier_league,2,1,3,0,12,11,319,223,13,17,333,204
+Wigan Athletic,Aston Villa,1-2,https://www.besoccer.com/match/wigan-athletic/aston-villa-fc/200810167,2008,20,premier_league,1,2,0,3,13,12,320,225,14,17,333,207
+Everton,Arsenal,1-4,https://www.besoccer.com/match/everton-fc/arsenal/200810162,2008,20,premier_league,1,4,0,3,22,11,321,229,19,19,333,210
+Derby County,Blackburn Rovers,1-2,https://www.besoccer.com/match/derby-county-fc/blackburn-rovers-fc/200810168,2008,20,premier_league,1,2,0,3,7,19,322,231,5,16,333,213
+Man. City,Liverpool,0-0,https://www.besoccer.com/match/manchester-city-fc/liverpool/200810169,2008,20,premier_league,0,0,1,1,19,7,322,231,29,21,334,214
+Fulham,Chelsea,1-2,https://www.besoccer.com/match/fulham/chelsea-fc/200810172,2008,21,premier_league,1,2,0,3,16,18,323,233,11,22,334,217
+Arsenal,West Ham,2-0,https://www.besoccer.com/match/arsenal/west-ham-united/200810170,2008,21,premier_league,2,0,3,0,25,7,325,233,31,16,337,217
+Man. Utd,Birmingham City,1-0,https://www.besoccer.com/match/manchester-united-fc/birmingham-city-fc/200810173,2008,21,premier_league,1,0,3,0,23,3,326,233,31,7,340,217
+Middlesbrough,Everton,0-2,https://www.besoccer.com/match/middlesbrough-fc/everton-fc/200810174,2008,21,premier_league,0,2,0,3,11,17,326,235,9,17,340,220
+Reading,Portsmouth,0-2,https://www.besoccer.com/match/reading-fc/portsmouth/200810175,2008,21,premier_league,0,2,0,3,14,15,326,237,19,22,340,223
+Aston Villa,Tottenham Hotspur,2-1,https://www.besoccer.com/match/aston-villa-fc/tottenham-hotspur-fc/200810171,2008,21,premier_league,2,1,3,0,16,14,328,238,19,8,343,223
+Newcastle,Man. City,0-2,https://www.besoccer.com/match/newcastle-united-fc/manchester-city-fc/200810179,2008,21,premier_league,0,2,0,3,16,17,328,240,18,10,343,226
+Blackburn Rovers,Sunderland,1-0,https://www.besoccer.com/match/blackburn-rovers-fc/sunderland-afc/200810176,2008,21,premier_league,1,0,3,0,12,12,329,240,17,2,346,226
+Bolton Wanderers,Derby County,1-0,https://www.besoccer.com/match/bolton-wanderers-fc/derby-county-fc/200810177,2008,21,premier_league,1,0,3,0,16,9,330,240,18,2,349,226
+Liverpool,Wigan Athletic,1-1,https://www.besoccer.com/match/liverpool/wigan-athletic/200810178,2008,21,premier_league,1,1,1,1,25,7,331,241,20,3,350,227
+Arsenal,Birmingham City,1-1,https://www.besoccer.com/match/arsenal/birmingham-city-fc/200810180,2008,22,premier_league,1,1,1,1,26,8,332,242,32,8,351,228
+Aston Villa,Reading,3-1,https://www.besoccer.com/match/aston-villa-fc/reading-fc/200810181,2008,22,premier_league,3,1,3,0,19,15,335,243,22,3,354,228
+Chelsea,Tottenham Hotspur,2-0,https://www.besoccer.com/match/chelsea-fc/tottenham-hotspur-fc/200810182,2008,22,premier_league,2,0,3,0,22,8,337,243,25,8,357,228
+Derby County,Wigan Athletic,0-1,https://www.besoccer.com/match/derby-county-fc/wigan-athletic/200810183,2008,22,premier_league,0,1,0,3,7,20,337,244,5,6,357,231
+Everton,Man. City,1-0,https://www.besoccer.com/match/everton-fc/manchester-city-fc/200810184,2008,22,premier_league,1,0,3,0,23,11,338,244,22,10,360,231
+Middlesbrough,Liverpool,1-1,https://www.besoccer.com/match/middlesbrough-fc/liverpool/200810186,2008,22,premier_league,1,1,1,1,12,18,339,245,10,22,361,232
+West Ham,Fulham,2-1,https://www.besoccer.com/match/west-ham-united/fulham/200810187,2008,22,premier_league,2,1,3,0,14,12,341,246,16,4,364,232
+Man. Utd,Newcastle,6-0,https://www.besoccer.com/match/manchester-united-fc/newcastle-united-fc/200810185,2008,22,premier_league,6,0,3,0,29,3,347,246,34,8,367,232
+Sunderland,Portsmouth,2-0,https://www.besoccer.com/match/sunderland-afc/portsmouth/200810189,2008,22,premier_league,2,0,3,0,13,13,349,246,18,22,370,232
+Bolton Wanderers,Blackburn Rovers,1-2,https://www.besoccer.com/match/bolton-wanderers-fc/blackburn-rovers-fc/200810188,2008,22,premier_league,1,2,0,3,17,11,350,248,18,19,370,235
+Birmingham City,Chelsea,0-1,https://www.besoccer.com/match/birmingham-city-fc/chelsea-fc/200810190,2008,23,premier_league,0,1,0,3,12,13,350,249,12,25,370,238
+Blackburn Rovers,Middlesbrough,1-1,https://www.besoccer.com/match/blackburn-rovers-fc/middlesbrough-fc/200810191,2008,23,premier_league,1,1,1,1,13,13,351,250,18,12,371,239
+Fulham,Arsenal,0-3,https://www.besoccer.com/match/fulham/arsenal/200810192,2008,23,premier_league,0,3,0,3,16,21,351,253,11,22,371,242
+Portsmouth,Derby County,3-1,https://www.besoccer.com/match/portsmouth/derby-county-fc/200810194,2008,23,premier_league,3,1,3,0,14,9,354,254,15,2,374,242
+Reading,Man. Utd,0-2,https://www.besoccer.com/match/reading-fc/manchester-united-fc/200810195,2008,23,premier_league,0,2,0,3,14,17,354,256,19,20,374,245
+Tottenham Hotspur,Sunderland,2-0,https://www.besoccer.com/match/tottenham-hotspur-fc/sunderland-afc/200810196,2008,23,premier_league,2,0,3,0,32,21,356,256,19,2,377,245
+Newcastle,Bolton Wanderers,0-0,https://www.besoccer.com/match/newcastle-united-fc/bolton-wanderers-fc/200810193,2008,23,premier_league,0,0,1,1,16,17,356,256,19,3,378,246
+Wigan Athletic,Everton,1-2,https://www.besoccer.com/match/wigan-athletic/everton-fc/200810198,2008,23,premier_league,1,2,0,3,14,14,357,258,14,20,378,249
+Man. City,West Ham,1-1,https://www.besoccer.com/match/manchester-city-fc/west-ham-united/200810197,2008,23,premier_league,1,1,1,1,20,8,358,259,30,17,379,250
+Liverpool,Aston Villa,2-2,https://www.besoccer.com/match/liverpool/aston-villa-fc/200810199,2008,23,premier_league,2,2,1,1,27,9,360,261,21,18,380,251
+Aston Villa,Blackburn Rovers,1-1,https://www.besoccer.com/match/aston-villa-fc/blackburn-rovers-fc/200810200,2008,24,premier_league,1,1,1,1,20,16,361,262,23,20,381,252
+Arsenal,Newcastle,3-0,https://www.besoccer.com/match/arsenal/newcastle-united-fc/200810201,2008,24,premier_league,3,0,3,0,29,8,364,262,35,8,384,252
+Bolton Wanderers,Fulham,0-0,https://www.besoccer.com/match/bolton-wanderers-fc/fulham/200810202,2008,24,premier_league,0,0,1,1,17,11,364,262,19,5,385,253
+Middlesbrough,Wigan Athletic,1-0,https://www.besoccer.com/match/middlesbrough-fc/wigan-athletic/200810203,2008,24,premier_league,1,0,3,0,13,18,365,262,13,6,388,253
+Sunderland,Birmingham City,2-0,https://www.besoccer.com/match/sunderland-afc/birmingham-city-fc/200810204,2008,24,premier_league,2,0,3,0,15,13,367,262,21,8,391,253
+Chelsea,Reading,1-0,https://www.besoccer.com/match/chelsea-fc/reading-fc/200810205,2008,24,premier_league,1,0,3,0,23,8,368,262,28,3,394,253
+Derby County,Man. City,1-1,https://www.besoccer.com/match/derby-county-fc/manchester-city-fc/200810206,2008,24,premier_league,1,1,1,1,8,21,369,263,6,11,395,254
+West Ham,Liverpool,1-0,https://www.besoccer.com/match/west-ham-united/liverpool/200810209,2008,24,premier_league,1,0,3,0,15,12,370,263,19,22,398,254
+Everton,Tottenham Hotspur,0-0,https://www.besoccer.com/match/everton-fc/tottenham-hotspur-fc/200810207,2008,24,premier_league,0,0,1,1,23,11,370,263,23,9,399,255
+Man. Utd,Portsmouth,2-0,https://www.besoccer.com/match/manchester-united-fc/portsmouth/200810208,2008,24,premier_league,2,0,3,0,31,3,372,263,37,22,402,255
+Man. City,Arsenal,1-3,https://www.besoccer.com/match/manchester-city-fc/arsenal/200810213,2008,25,premier_league,1,3,0,3,21,11,373,266,30,25,402,258
+Birmingham City,Derby County,1-1,https://www.besoccer.com/match/birmingham-city-fc/derby-county-fc/200810210,2008,25,premier_league,1,1,1,1,13,14,374,267,13,3,403,259
+Blackburn Rovers,Everton,0-0,https://www.besoccer.com/match/blackburn-rovers-fc/everton-fc/200810211,2008,25,premier_league,0,0,1,1,13,13,374,267,19,21,404,260
+Portsmouth,Chelsea,1-1,https://www.besoccer.com/match/portsmouth/chelsea-fc/200810214,2008,25,premier_league,1,1,1,1,15,10,375,268,16,26,405,261
+Reading,Bolton Wanderers,0-2,https://www.besoccer.com/match/reading-fc/bolton-wanderers-fc/200810215,2008,25,premier_league,0,2,0,3,14,19,375,270,19,6,405,264
+Tottenham Hotspur,Man. Utd,1-1,https://www.besoccer.com/match/tottenham-hotspur-fc/manchester-united-fc/200810216,2008,25,premier_league,1,1,1,1,33,22,376,271,20,21,406,265
+Wigan Athletic,West Ham,1-0,https://www.besoccer.com/match/wigan-athletic/west-ham-united/200810217,2008,25,premier_league,1,0,3,0,15,14,377,271,17,17,409,265
+Liverpool,Sunderland,3-0,https://www.besoccer.com/match/liverpool/sunderland-afc/200810212,2008,25,premier_league,3,0,3,0,30,9,380,271,24,2,412,265
+Newcastle,Middlesbrough,1-1,https://www.besoccer.com/match/newcastle-united-fc/middlesbrough-fc/200810219,2008,25,premier_league,1,1,1,1,17,18,381,272,20,13,413,266
+Fulham,Aston Villa,2-1,https://www.besoccer.com/match/fulham/aston-villa-fc/200810218,2008,25,premier_league,2,1,3,0,18,22,383,273,14,18,416,266
+Aston Villa,Newcastle,4-1,https://www.besoccer.com/match/aston-villa-fc/newcastle-united-fc/200810220,2008,26,premier_league,4,1,3,0,24,17,387,274,26,8,419,266
+Bolton Wanderers,Portsmouth,0-1,https://www.besoccer.com/match/bolton-wanderers-fc/portsmouth/200810221,2008,26,premier_league,0,1,0,3,17,12,387,275,19,25,419,269
+Derby County,Tottenham Hotspur,0-3,https://www.besoccer.com/match/derby-county-fc/tottenham-hotspur-fc/200810222,2008,26,premier_league,0,3,0,3,8,24,387,278,6,12,419,272
+Everton,Reading,1-0,https://www.besoccer.com/match/everton-fc/reading-fc/200810223,2008,26,premier_league,1,0,3,0,24,11,388,278,26,3,422,272
+Middlesbrough,Fulham,1-0,https://www.besoccer.com/match/middlesbrough-fc/fulham/200810224,2008,26,premier_league,1,0,3,0,14,18,389,278,16,5,425,272
+Sunderland,Wigan Athletic,2-0,https://www.besoccer.com/match/sunderland-afc/wigan-athletic/200810225,2008,26,premier_league,2,0,3,0,17,13,391,278,24,6,428,272
+West Ham,Birmingham City,1-1,https://www.besoccer.com/match/west-ham-united/birmingham-city-fc/200810226,2008,26,premier_league,1,1,1,1,16,13,392,279,20,9,429,273
+Man. Utd,Man. City,1-2,https://www.besoccer.com/match/manchester-united-fc/manchester-city-fc/200810228,2008,26,premier_league,1,2,0,3,32,5,393,281,37,14,429,276
+Chelsea,Liverpool,0-0,https://www.besoccer.com/match/chelsea-fc/liverpool/200810227,2008,26,premier_league,0,0,1,1,23,8,393,281,29,23,430,277
+Arsenal,Blackburn Rovers,2-0,https://www.besoccer.com/match/arsenal/blackburn-rovers-fc/200810229,2008,26,premier_league,2,0,3,0,31,8,395,281,38,20,433,277
+Birmingham City,Arsenal,2-2,https://www.besoccer.com/match/birmingham-city-fc/arsenal/200810230,2008,27,premier_league,2,2,1,1,15,16,397,283,14,26,434,278
+Fulham,West Ham,0-1,https://www.besoccer.com/match/fulham/west-ham-united/200810231,2008,27,premier_league,0,1,0,3,18,23,397,284,14,20,434,281
+Liverpool,Middlesbrough,3-2,https://www.besoccer.com/match/liverpool/middlesbrough-fc/200810232,2008,27,premier_league,3,2,3,0,33,11,400,286,27,13,437,281
+Portsmouth,Sunderland,1-0,https://www.besoccer.com/match/portsmouth/sunderland-afc/200810234,2008,27,premier_league,1,0,3,0,16,10,401,286,19,2,440,281
+Wigan Athletic,Derby County,2-0,https://www.besoccer.com/match/wigan-athletic/derby-county-fc/200810235,2008,27,premier_league,2,0,3,0,17,14,403,286,20,3,443,281
+Newcastle,Man. Utd,1-5,https://www.besoccer.com/match/newcastle-united-fc/manchester-united-fc/200810233,2008,27,premier_league,1,5,0,3,18,23,404,291,20,24,443,284
+Reading,Aston Villa,1-2,https://www.besoccer.com/match/reading-fc/aston-villa-fc/200810237,2008,27,premier_league,1,2,0,3,15,21,405,293,19,21,443,287
+Blackburn Rovers,Bolton Wanderers,4-1,https://www.besoccer.com/match/blackburn-rovers-fc/bolton-wanderers-fc/200810236,2008,27,premier_league,4,1,3,0,17,14,409,294,22,6,446,287
+Man. City,Everton,0-2,https://www.besoccer.com/match/manchester-city-fc/everton-fc/200810238,2008,27,premier_league,0,2,0,3,21,13,409,296,30,24,446,290
+Tottenham Hotspur,Chelsea,4-4,https://www.besoccer.com/match/tottenham-hotspur-fc/chelsea-fc/200810239,2008,27,premier_league,4,4,1,1,37,26,413,300,21,27,447,291
+Arsenal,Aston Villa,1-1,https://www.besoccer.com/match/arsenal/aston-villa-fc/200810240,2008,28,premier_league,1,1,1,1,32,9,414,301,39,22,448,292
+Birmingham City,Tottenham Hotspur,4-1,https://www.besoccer.com/match/birmingham-city-fc/tottenham-hotspur-fc/200810241,2008,28,premier_league,4,1,3,0,19,17,418,302,17,12,451,292
+Derby County,Sunderland,0-0,https://www.besoccer.com/match/derby-county-fc/sunderland-afc/200810242,2008,28,premier_league,0,0,1,1,8,24,418,302,7,3,452,293
+Fulham,Man. Utd,0-3,https://www.besoccer.com/match/fulham/manchester-united-fc/200810243,2008,28,premier_league,0,3,0,3,18,26,418,305,14,27,452,296
+Middlesbrough,Reading,0-1,https://www.besoccer.com/match/middlesbrough-fc/reading-fc/200810245,2008,28,premier_league,0,1,0,3,14,19,418,306,16,6,452,299
+Newcastle,Blackburn Rovers,0-1,https://www.besoccer.com/match/newcastle-united-fc/blackburn-rovers-fc/200810246,2008,28,premier_league,0,1,0,3,18,24,418,307,20,23,452,302
+West Ham,Chelsea,0-4,https://www.besoccer.com/match/west-ham-united/chelsea-fc/200810247,2008,28,premier_league,0,4,0,3,16,17,418,311,20,30,452,305
+Man. City,Wigan Athletic,0-0,https://www.besoccer.com/match/manchester-city-fc/wigan-athletic/200810244,2008,28,premier_league,0,0,1,1,21,13,418,311,31,7,453,306
+Bolton Wanderers,Liverpool,1-3,https://www.besoccer.com/match/bolton-wanderers-fc/liverpool/200810248,2008,28,premier_league,1,3,0,3,18,15,419,314,19,26,453,309
+Everton,Portsmouth,3-1,https://www.besoccer.com/match/everton-fc/portsmouth/200810249,2008,28,premier_league,3,1,3,0,27,12,422,315,29,25,456,309
+Blackburn Rovers,Fulham,1-1,https://www.besoccer.com/match/blackburn-rovers-fc/fulham/200810250,2008,29,premier_league,1,1,1,1,18,15,423,316,23,6,457,310
+Liverpool,Newcastle,3-0,https://www.besoccer.com/match/liverpool/newcastle-united-fc/200810251,2008,29,premier_league,3,0,3,0,36,11,426,316,30,8,460,310
+Reading,Man. City,2-0,https://www.besoccer.com/match/reading-fc/manchester-city-fc/200810252,2008,29,premier_league,2,0,3,0,17,21,428,316,22,14,463,310
+Sunderland,Everton,0-1,https://www.besoccer.com/match/sunderland-afc/everton-fc/200810253,2008,29,premier_league,0,1,0,3,17,14,428,317,24,27,463,313
+Tottenham Hotspur,West Ham,4-0,https://www.besoccer.com/match/tottenham-hotspur-fc/west-ham-united/200810254,2008,29,premier_league,4,0,3,0,41,26,432,317,24,20,466,313
+Wigan Athletic,Arsenal,0-0,https://www.besoccer.com/match/wigan-athletic/arsenal/200810255,2008,29,premier_league,0,0,1,1,17,14,432,317,21,27,467,314
+Aston Villa,Middlesbrough,1-1,https://www.besoccer.com/match/aston-villa-fc/middlesbrough-fc/200810256,2008,29,premier_league,1,1,1,1,25,18,433,318,27,14,468,315
+Portsmouth,Birmingham City,4-2,https://www.besoccer.com/match/portsmouth/birmingham-city-fc/200810258,2008,29,premier_league,4,2,3,0,20,12,437,320,22,9,471,315
+Chelsea,Derby County,6-1,https://www.besoccer.com/match/chelsea-fc/derby-county-fc/200810257,2008,29,premier_league,6,1,3,0,29,9,443,321,32,3,474,315
+Man. Utd,Bolton Wanderers,2-0,https://www.besoccer.com/match/manchester-united-fc/bolton-wanderers-fc/200810259,2008,29,premier_league,2,0,3,0,34,5,445,321,40,6,477,315
+Derby County,Man. Utd,0-1,https://www.besoccer.com/match/derby-county-fc/manchester-united-fc/200810261,2008,30,premier_league,0,1,0,3,8,25,445,322,7,30,477,318
+Liverpool,Reading,2-1,https://www.besoccer.com/match/liverpool/reading-fc/200810262,2008,30,premier_league,2,1,3,0,38,12,447,323,33,6,480,318
+Portsmouth,Aston Villa,2-0,https://www.besoccer.com/match/portsmouth/aston-villa-fc/200810263,2008,30,premier_league,2,0,3,0,22,12,449,323,25,22,483,318
+Sunderland,Chelsea,0-1,https://www.besoccer.com/match/sunderland-afc/chelsea-fc/200810264,2008,30,premier_league,0,1,0,3,17,15,449,324,24,33,483,321
+West Ham,Blackburn Rovers,2-1,https://www.besoccer.com/match/west-ham-united/blackburn-rovers-fc/200810265,2008,30,premier_league,2,1,3,0,18,18,451,325,23,23,486,321
+Arsenal,Middlesbrough,1-1,https://www.besoccer.com/match/arsenal/middlesbrough-fc/200810260,2008,30,premier_league,1,1,1,1,33,10,452,326,40,15,487,322
+Fulham,Everton,1-0,https://www.besoccer.com/match/fulham/everton-fc/200810266,2008,30,premier_league,1,0,3,0,19,26,453,326,17,27,490,322
+Wigan Athletic,Bolton Wanderers,1-0,https://www.besoccer.com/match/wigan-athletic/bolton-wanderers-fc/200810268,2008,30,premier_league,1,0,3,0,18,14,454,326,24,6,493,322
+Man. City,Tottenham Hotspur,2-1,https://www.besoccer.com/match/manchester-city-fc/tottenham-hotspur-fc/200810267,2008,30,premier_league,2,1,3,0,23,14,456,327,34,12,496,322
+Birmingham City,Newcastle,1-1,https://www.besoccer.com/match/birmingham-city-fc/newcastle-united-fc/200810269,2008,30,premier_league,1,1,1,1,20,18,457,328,18,9,497,323
+Tottenham Hotspur,Portsmouth,2-0,https://www.besoccer.com/match/tottenham-hotspur-fc/portsmouth/200810278,2008,31,premier_league,2,0,3,0,43,26,459,328,27,25,500,323
+Aston Villa,Sunderland,0-1,https://www.besoccer.com/match/aston-villa-fc/sunderland-afc/200810270,2008,31,premier_league,0,1,0,3,25,19,459,329,27,6,500,326
+Blackburn Rovers,Wigan Athletic,3-1,https://www.besoccer.com/match/blackburn-rovers-fc/wigan-athletic/200810271,2008,31,premier_league,3,1,3,0,21,16,462,330,26,7,503,326
+Bolton Wanderers,Man. City,0-0,https://www.besoccer.com/match/bolton-wanderers-fc/manchester-city-fc/200810272,2008,31,premier_league,0,0,1,1,18,15,462,330,20,15,504,327
+Middlesbrough,Derby County,1-0,https://www.besoccer.com/match/middlesbrough-fc/derby-county-fc/200810275,2008,31,premier_league,1,0,3,0,15,19,463,330,19,3,507,327
+Newcastle,Fulham,2-0,https://www.besoccer.com/match/newcastle-united-fc/fulham/200810276,2008,31,premier_league,2,0,3,0,20,24,465,330,23,6,510,327
+Reading,Birmingham City,2-1,https://www.besoccer.com/match/reading-fc/birmingham-city-fc/200810277,2008,31,premier_league,2,1,3,0,19,22,467,331,25,9,513,327
+Everton,West Ham,1-1,https://www.besoccer.com/match/everton-fc/west-ham-united/200810273,2008,31,premier_league,1,1,1,1,28,13,468,332,30,21,514,328
+Man. Utd,Liverpool,3-0,https://www.besoccer.com/match/manchester-united-fc/liverpool/200810274,2008,31,premier_league,3,0,3,0,37,5,471,332,43,26,517,328
+Chelsea,Arsenal,2-1,https://www.besoccer.com/match/chelsea-fc/arsenal/200810279,2008,31,premier_league,2,1,3,0,31,10,473,333,35,27,520,328
+Birmingham City,Man. City,3-1,https://www.besoccer.com/match/birmingham-city-fc/manchester-city-fc/200810280,2008,32,premier_league,3,1,3,0,23,19,476,334,21,15,523,328
+Bolton Wanderers,Arsenal,2-3,https://www.besoccer.com/match/bolton-wanderers-fc/arsenal/200810281,2008,32,premier_league,2,3,0,3,20,18,478,337,20,30,523,331
+Derby County,Fulham,2-2,https://www.besoccer.com/match/derby-county-fc/fulham/200810282,2008,32,premier_league,2,2,1,1,10,27,480,339,8,7,524,332
+Portsmouth,Wigan Athletic,2-0,https://www.besoccer.com/match/portsmouth/wigan-athletic/200810284,2008,32,premier_league,2,0,3,0,24,12,482,339,28,7,527,332
+Reading,Blackburn Rovers,0-0,https://www.besoccer.com/match/reading-fc/blackburn-rovers-fc/200810285,2008,32,premier_league,0,0,1,1,19,22,482,339,26,24,528,333
+Sunderland,West Ham,2-1,https://www.besoccer.com/match/sunderland-afc/west-ham-united/200810286,2008,32,premier_league,2,1,3,0,19,16,484,340,27,21,531,333
+Man. Utd,Aston Villa,4-0,https://www.besoccer.com/match/manchester-united-fc/aston-villa-fc/200810283,2008,32,premier_league,4,0,3,0,41,5,488,340,46,22,534,333
+Chelsea,Middlesbrough,1-0,https://www.besoccer.com/match/chelsea-fc/middlesbrough-fc/200810287,2008,32,premier_league,1,0,3,0,32,10,489,340,38,15,537,333
+Tottenham Hotspur,Newcastle,1-4,https://www.besoccer.com/match/tottenham-hotspur-fc/newcastle-united-fc/200810289,2008,32,premier_league,1,4,0,3,44,30,490,344,27,12,537,336
+Liverpool,Everton,1-0,https://www.besoccer.com/match/liverpool/everton-fc/200810288,2008,32,premier_league,1,0,3,0,39,12,491,344,36,27,540,336
+Arsenal,Liverpool,1-1,https://www.besoccer.com/match/arsenal/liverpool/200810290,2008,33,premier_league,1,1,1,1,34,11,492,345,41,27,541,337
+Aston Villa,Bolton Wanderers,4-0,https://www.besoccer.com/match/aston-villa-fc/bolton-wanderers-fc/200810291,2008,33,premier_league,4,0,3,0,29,19,496,345,30,6,544,337
+Blackburn Rovers,Tottenham Hotspur,1-1,https://www.besoccer.com/match/blackburn-rovers-fc/tottenham-hotspur-fc/200810292,2008,33,premier_league,1,1,1,1,22,17,497,346,27,13,545,338
+Fulham,Sunderland,1-3,https://www.besoccer.com/match/fulham/sunderland-afc/200810293,2008,33,premier_league,1,3,0,3,20,29,498,349,17,9,545,341
+Man. City,Chelsea,0-2,https://www.besoccer.com/match/manchester-city-fc/chelsea-fc/200810294,2008,33,premier_league,0,2,0,3,23,16,498,351,34,36,545,344
+Newcastle,Reading,3-0,https://www.besoccer.com/match/newcastle-united-fc/reading-fc/200810295,2008,33,premier_league,3,0,3,0,23,24,501,351,26,6,548,344
+Wigan Athletic,Birmingham City,2-0,https://www.besoccer.com/match/wigan-athletic/birmingham-city-fc/200810296,2008,33,premier_league,2,0,3,0,20,14,503,351,27,9,551,344
+Middlesbrough,Man. Utd,2-2,https://www.besoccer.com/match/middlesbrough-fc/manchester-united-fc/200810298,2008,33,premier_league,2,2,1,1,17,21,505,353,20,31,552,345
+Everton,Derby County,1-0,https://www.besoccer.com/match/everton-fc/derby-county-fc/200810297,2008,33,premier_league,1,0,3,0,29,13,506,353,33,3,555,345
+West Ham,Portsmouth,0-1,https://www.besoccer.com/match/west-ham-united/portsmouth/200810299,2008,33,premier_league,0,1,0,3,18,19,506,354,23,28,555,348
+Birmingham City,Everton,1-1,https://www.besoccer.com/match/birmingham-city-fc/everton-fc/200810300,2008,34,premier_league,1,1,1,1,24,20,507,355,22,28,556,349
+Bolton Wanderers,West Ham,1-0,https://www.besoccer.com/match/bolton-wanderers-fc/west-ham-united/200810301,2008,34,premier_league,1,0,3,0,21,18,508,355,23,21,559,349
+Derby County,Aston Villa,0-6,https://www.besoccer.com/match/derby-county-fc/aston-villa-fc/200810302,2008,34,premier_league,0,6,0,3,10,33,508,361,8,25,559,352
+Reading,Fulham,0-2,https://www.besoccer.com/match/reading-fc/fulham/200810304,2008,34,premier_league,0,2,0,3,19,24,508,363,26,10,559,355
+Sunderland,Man. City,1-2,https://www.besoccer.com/match/sunderland-afc/manchester-city-fc/200810305,2008,34,premier_league,1,2,0,3,20,18,509,365,27,18,559,358
+Tottenham Hotspur,Middlesbrough,1-1,https://www.besoccer.com/match/tottenham-hotspur-fc/middlesbrough-fc/200810306,2008,34,premier_league,1,1,1,1,45,31,510,366,28,16,560,359
+Portsmouth,Newcastle,0-0,https://www.besoccer.com/match/portsmouth/newcastle-united-fc/200810303,2008,34,premier_league,0,0,1,1,24,12,510,366,29,13,561,360
+Liverpool,Blackburn Rovers,3-1,https://www.besoccer.com/match/liverpool/blackburn-rovers-fc/200810307,2008,34,premier_league,3,1,3,0,42,13,513,367,39,24,564,360
+Man. Utd,Arsenal,2-1,https://www.besoccer.com/match/manchester-united-fc/arsenal/200810308,2008,34,premier_league,2,1,3,0,43,6,515,368,49,30,567,360
+Chelsea,Wigan Athletic,1-1,https://www.besoccer.com/match/chelsea-fc/wigan-athletic/200810309,2008,34,premier_league,1,1,1,1,33,11,516,369,39,8,568,361
+Everton,Chelsea,0-1,https://www.besoccer.com/match/everton-fc/chelsea-fc/200810310,2008,35,premier_league,0,1,0,3,29,14,516,370,33,39,568,364
+Arsenal,Reading,2-0,https://www.besoccer.com/match/arsenal/reading-fc/200810311,2008,35,premier_league,2,0,3,0,36,11,518,370,44,6,571,364
+Fulham,Liverpool,0-2,https://www.besoccer.com/match/fulham/liverpool/200810313,2008,35,premier_league,0,2,0,3,20,31,518,372,17,30,571,367
+Middlesbrough,Bolton Wanderers,0-1,https://www.besoccer.com/match/middlesbrough-fc/bolton-wanderers-fc/200810314,2008,35,premier_league,0,1,0,3,17,22,518,373,20,9,571,370
+West Ham,Derby County,2-1,https://www.besoccer.com/match/west-ham-united/derby-county-fc/200810315,2008,35,premier_league,2,1,3,0,20,20,520,374,26,3,574,370
+Wigan Athletic,Tottenham Hotspur,1-1,https://www.besoccer.com/match/wigan-athletic/tottenham-hotspur-fc/200810316,2008,35,premier_league,1,1,1,1,21,15,521,375,28,14,575,371
+Blackburn Rovers,Man. Utd,1-1,https://www.besoccer.com/match/blackburn-rovers-fc/manchester-united-fc/200810312,2008,35,premier_league,1,1,1,1,23,18,522,376,28,32,576,372
+Aston Villa,Birmingham City,5-1,https://www.besoccer.com/match/aston-villa-fc/birmingham-city-fc/200810317,2008,35,premier_league,5,1,3,0,34,20,527,377,33,9,579,372
+Newcastle,Sunderland,2-0,https://www.besoccer.com/match/newcastle-united-fc/sunderland-afc/200810319,2008,35,premier_league,2,0,3,0,25,24,529,377,29,9,582,372
+Man. City,Portsmouth,3-1,https://www.besoccer.com/match/manchester-city-fc/portsmouth/200810318,2008,35,premier_league,3,1,3,0,26,17,532,378,37,28,585,372
+Chelsea,Man. Utd,2-1,https://www.besoccer.com/match/chelsea-fc/manchester-united-fc/200810321,2008,36,premier_league,2,1,3,0,35,12,534,379,42,32,588,372
+Birmingham City,Liverpool,2-2,https://www.besoccer.com/match/birmingham-city-fc/liverpool/200810320,2008,36,premier_league,2,2,1,1,26,22,536,381,23,31,589,373
+Man. City,Fulham,2-3,https://www.besoccer.com/match/manchester-city-fc/fulham/200810322,2008,36,premier_league,2,3,0,3,28,20,538,384,37,13,589,376
+Sunderland,Middlesbrough,3-2,https://www.besoccer.com/match/sunderland-afc/middlesbrough-fc/200810323,2008,36,premier_league,3,2,3,0,23,20,541,386,30,16,592,376
+Tottenham Hotspur,Bolton Wanderers,1-1,https://www.besoccer.com/match/tottenham-hotspur-fc/bolton-wanderers-fc/200810324,2008,36,premier_league,1,1,1,1,46,32,542,387,29,10,593,377
+West Ham,Newcastle,2-2,https://www.besoccer.com/match/west-ham-united/newcastle-united-fc/200810325,2008,36,premier_league,2,2,1,1,22,22,544,389,27,14,594,378
+Wigan Athletic,Reading,0-0,https://www.besoccer.com/match/wigan-athletic/reading-fc/200810326,2008,36,premier_league,0,0,1,1,21,15,544,389,29,7,595,379
+Portsmouth,Blackburn Rovers,0-1,https://www.besoccer.com/match/portsmouth/blackburn-rovers-fc/200810328,2008,36,premier_league,0,1,0,3,24,13,544,390,29,27,595,382
+Everton,Aston Villa,2-2,https://www.besoccer.com/match/everton-fc/aston-villa-fc/200810327,2008,36,premier_league,2,2,1,1,31,16,546,392,34,26,596,383
+Derby County,Arsenal,2-6,https://www.besoccer.com/match/derby-county-fc/arsenal/200810329,2008,36,premier_league,2,6,0,3,12,39,548,398,8,33,596,386
+Man. Utd,West Ham,4-1,https://www.besoccer.com/match/manchester-united-fc/west-ham-united/200810334,2008,37,premier_league,4,1,3,0,47,7,552,399,52,21,599,386
+Aston Villa,Wigan Athletic,0-2,https://www.besoccer.com/match/aston-villa-fc/wigan-athletic/200810330,2008,37,premier_league,0,2,0,3,34,22,552,401,33,11,599,389
+Blackburn Rovers,Derby County,3-1,https://www.besoccer.com/match/blackburn-rovers-fc/derby-county-fc/200810331,2008,37,premier_league,3,1,3,0,26,19,555,402,31,3,602,389
+Fulham,Birmingham City,2-0,https://www.besoccer.com/match/fulham/birmingham-city-fc/200810333,2008,37,premier_league,2,0,3,0,22,31,557,402,20,9,605,389
+Middlesbrough,Portsmouth,2-0,https://www.besoccer.com/match/middlesbrough-fc/portsmouth/200810335,2008,37,premier_league,2,0,3,0,19,22,559,402,23,28,608,389
+Reading,Tottenham Hotspur,0-1,https://www.besoccer.com/match/reading-fc/tottenham-hotspur-fc/200810336,2008,37,premier_league,0,1,0,3,19,25,559,403,26,17,608,392
+Bolton Wanderers,Sunderland,2-0,https://www.besoccer.com/match/bolton-wanderers-fc/sunderland-afc/200810332,2008,37,premier_league,2,0,3,0,23,18,561,403,26,9,611,392
+Arsenal,Everton,1-0,https://www.besoccer.com/match/arsenal/everton-fc/200810337,2008,37,premier_league,1,0,3,0,37,11,562,403,47,28,614,392
+Liverpool,Man. City,1-0,https://www.besoccer.com/match/liverpool/manchester-city-fc/200810338,2008,37,premier_league,1,0,3,0,43,13,563,403,42,18,617,392
+Newcastle,Chelsea,0-2,https://www.besoccer.com/match/newcastle-united-fc/chelsea-fc/200810339,2008,37,premier_league,0,2,0,3,25,26,563,405,29,42,617,395
+Birmingham City,Blackburn Rovers,4-1,https://www.besoccer.com/match/birmingham-city-fc/blackburn-rovers-fc/200810340,2008,38,premier_league,4,1,3,0,30,23,567,406,26,27,620,395
+Chelsea,Bolton Wanderers,1-1,https://www.besoccer.com/match/chelsea-fc/bolton-wanderers-fc/200810341,2008,38,premier_league,1,1,1,1,36,13,568,407,43,11,621,396
+Derby County,Reading,0-4,https://www.besoccer.com/match/derby-county-fc/reading-fc/200810342,2008,38,premier_league,0,4,0,3,12,43,568,411,8,10,621,399
+Everton,Newcastle,3-1,https://www.besoccer.com/match/everton-fc/newcastle-united-fc/200810343,2008,38,premier_league,3,1,3,0,34,17,571,412,37,14,624,399
+Middlesbrough,Man. City,8-1,https://www.besoccer.com/match/middlesbrough-fc/manchester-city-fc/200810344,2008,38,premier_league,8,1,3,0,27,23,579,413,26,18,627,399
+Portsmouth,Fulham,0-1,https://www.besoccer.com/match/portsmouth/fulham/200810345,2008,38,premier_league,0,1,0,3,24,14,579,414,29,16,627,402
+Sunderland,Arsenal,0-1,https://www.besoccer.com/match/sunderland-afc/arsenal/200810346,2008,38,premier_league,0,1,0,3,23,21,579,415,30,36,627,405
+Tottenham Hotspur,Liverpool,0-2,https://www.besoccer.com/match/tottenham-hotspur-fc/liverpool/200810347,2008,38,premier_league,0,2,0,3,46,34,579,417,29,34,627,408
+West Ham,Aston Villa,2-2,https://www.besoccer.com/match/west-ham-united/aston-villa-fc/200810348,2008,38,premier_league,2,2,1,1,24,24,581,419,28,27,628,409
+Wigan Athletic,Man. Utd,0-2,https://www.besoccer.com/match/wigan-athletic/manchester-united-fc/200810349,2008,38,premier_league,0,2,0,3,21,17,581,421,29,35,628,412

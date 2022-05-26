@@ -8,13 +8,15 @@ from json import JSONEncoder
 import csv
 import plotly.express as px
 import plotly.io as pio
+import pickle
+import os
 
 class match_outcome_data:
 
     def __init__(self, match = True):
         #allow user to select league and year without manually changing file path
         
-        try:
+        try: #load football dataset
             self.league = input("Select league: ").replace(" ", "_").lower()
             if match == True:    
                 self.year = input("Select year: ")
@@ -26,9 +28,9 @@ class match_outcome_data:
 
             #self.x.head() #display 5 rows of dataset
         except:
-            "File failed to load"
+            f"{self.file} failed to load"
 
-        try:
+        try: #load Team_Info file
             if match == True:
                 self.team_info = pd.read_csv("Team_Info.csv")
             else:
@@ -37,7 +39,7 @@ class match_outcome_data:
         except:
             "Team_Info failed to load"
 
-        try:
+        try: #load Match_Info file
             if match == True:
                 self.match_info = pd.read_csv("Match_Info.csv")
             else:
@@ -46,26 +48,32 @@ class match_outcome_data:
                 self.match_info = pd.read_csv("Match_Info.csv")
         except:
             "Match_Info failed to load"
+        
+        try: #load ELO data
+            self.elo_data = pickle.load(open('elo_dict.pkl', 'rb'))
+        except:
+            "ELO data failed to load"
 
         #display graphs
         pio.renderers.default = "notebook" #set default renderer to 'notebook' or 'vscode'
+
         return None
 
-    def display_data(self):
-        return self.x #display dataset
+    def display_data(self): #display dataset
+        return self.x 
     
-    def get_data_types(self):
-        return self.x.dtypes #print data types
+    def get_data_types(self): #print data types
+        return self.x.dtypes 
 
     def get_teams(self): #confirm number of teams in league and list of teams
         self.x["Home_Team"][self.x["Home_Team"]!= "Away Team"].unique()
         return f'Number of teams in {self.league}: {len(set(self.x["Home_Team"]))}', set(self.x["Home_Team"])
 
-    def find_team(self, text): 
-        return self.x[self.x["Home_Team"].str.contains(text.lower().title())] #display data of specified team using "text"
+    def find_team(self, text): #display data of specific team using "text"
+        return self.x[self.x["Home_Team"].str.contains(text.lower().title())] 
 
-    def get_team_info(self):
-        return self.team_info[self.team_info["Team"].str.contains(f"{self.team}")] #display data for specified team
+    def get_team_info(self): #display data for specified team
+        return self.team_info[self.team_info["Team"].str.contains(f"{self.team}")] 
     
     def get_match_info(self):
         '''myList = [self.team.lower(), self.year]
@@ -74,8 +82,18 @@ class match_outcome_data:
             return str
         else:
             return "Did not work"'''
-        return self.match_info[self.match_info["Link"].str.contains(f"{self.team}".lower(), f'{self.year}')] #display match info dataset
+        #return self.match_info[self.match_info["Link"].str.contains(f"{self.team}".lower(), f'{self.year}')] #display match info dataset
+        return self.match_info
     
+    def get_elo(self):
+        team_elo = []
+
+        for key, value in self.elo_data.items():
+            team = key.rsplit("/",4)
+            team_elo.append({"Home_Team": team[2].replace("-", " ").title(), "Away_Team": team[3].replace("-", " ").title(), "Elo_Home": value["Elo_home"], "Elo_Away": value["Elo_away"] })
+        elo_df = pd.DataFrame(team_elo)
+        return elo_df
+        
     def split_results(self): #split results
         result = self.x["Result"].astype("category")
         #set(result) #display results in a set
@@ -86,7 +104,7 @@ class match_outcome_data:
 
     def get_results(self): 
         #split results and add to lists
-        home_goal = []
+        self.home_goal = []
         away_goal = []
         home_match_outcome = []
         away_match_outcome = []
@@ -97,7 +115,7 @@ class match_outcome_data:
 
         for res in split_result:
             #print("Home goals: ", res[0][0])    
-            home_goal.append(int(res[0][0])) #convert to int to add goals together -- default type is str
+            self.home_goal.append(int(res[0][0])) #convert to int to add goals together -- default type is str
             #print("Away goals: ", res[1][0])
             away_goal.append(int(res[1][0]))
                 
@@ -131,7 +149,7 @@ class match_outcome_data:
             '''
         
         #add lists to existing dataframe/set
-        self.x["Home_Goals"] = home_goal
+        self.x["Home_Goals"] = self.home_goal
         self.x["Away_Goals"] = away_goal
         self.x["Home_Match_Outcome"] = home_match_outcome
         self.x["Home_Points"] = home_points
@@ -141,7 +159,7 @@ class match_outcome_data:
         return self.x #display modified dataset
 
 
-    def get_cumulative_data(self):
+    def get_cumulative_data(self): 
         self.get_results()
         self.x["Total_Home_Goals_So_Far"] = self.x.groupby(["Home_Team"])["Home_Goals"].cumsum() #cumulative addition of goals for each home team
         self.x["Total_Away_Goals_So_Far"] = self.x.groupby(["Home_Team"])["Away_Goals"].cumsum() #cumulative addition of goals for each home team
@@ -165,16 +183,30 @@ class match_outcome_data:
 
         def get_total_away_goals(self):
         self.get_results()
-        return self.x.groupby(["Away_Team"]).agg({"Away_Goals" : ["sum"]})'''
+        return self.x.groupby(["Away_Team"]).agg({"Away_Goals" : ["sum"]})
+    '''
     
     def get_total_team_points(self):
         self.get_results()
-        return self.x.groupby(["League","Season","Home_Team"]).agg({"Home_Points" : ["sum"], "Away_Points" : ["sum"]}) #show total points per Round per Home Team only
+        fig = px.bar(self.x.groupby(["Home_Team"])["Home_Points"].sum(), "Home_Points", 
+                     color = "Home_Points", height = 500, title=f"Counts of Team Home Points in {self.league} {self.year} ",
+                     labels={"Home_Team": "Home Team", "Home_Points": "Home Points"})
 
-    '''def get_total_away_points(self):
-        self.get_results()
-        return self.x.groupby(["Away_Team"]).agg({"Away_Points" : ["sum"]}) #show total points per Round per Home Team only'''
-    def get_team_stats(self):
+        fig.update_layout(showlegend=True) #False to hide
+        fig.update_xaxes(showticklabels=True, tickangle=45)
+        fig.update_yaxes(matches=None, showticklabels=True)
+
+        fig1 = px.bar(self.x.groupby(["Away_Team"])["Away_Points"].sum(), "Away_Points", 
+                     color = "Away_Points", height = 500, title=f"Counts of Team Away Points in {self.league} {self.year} ",
+                     labels={"Away_Team": "Away Team", "Away_Points": "Away Points"})
+
+        fig1.update_layout(showlegend=True) #False to hide
+        fig1.update_xaxes(showticklabels=True, tickangle=45)
+        fig1.update_yaxes(matches=None, showticklabels=True)
+        #return self.x.groupby(["League","Season","Home_Team"]).agg({"Home_Points" : ["sum"], "Away_Points" : ["sum"]}) #show total points per Round per Home Team only
+        return self.x.groupby(["Home_Team"]).agg({"Home_Points" : ["sum"], "Away_Points" : ["sum"]})
+
+    def get_team_stats(self): #get win,loss, draw stats of each team
         self.get_results()
         return self.x.groupby(["League", "Season", "Home_Team"]).agg({"Home_Match_Outcome": ["sum"], "Away_Match_Outcome": ["sum"]})
     
@@ -182,15 +214,15 @@ class match_outcome_data:
         self.get_results()
         #calculate mean, sum and standard deviation of home goals
         grp = self.x.groupby('Home_Team')
-        score_sum = []
+        self.home_score_sum = []
         score_mean = []
         score_std = []
-        #for gr in grp:
+        
         score_mean.append(grp['Home_Goals'].agg(np.mean)) #calculate mean 
-        score_sum.append(grp['Home_Goals'].agg(np.sum)) #calculate sum
+        self.home_score_sum.append(grp['Home_Goals'].agg(np.sum)) #calculate sum
         score_std.append(grp['Home_Goals'].agg(np.std)) #calculate standard deviation
 
-        return 'sum: ',score_sum, 'mean: ', score_mean, 'standard deviation: ', score_std
+        return 'sum: ', self.home_score_sum, 'mean: ', score_mean, 'standard deviation: ', score_std
 
     def get_away_goal_stats(self):
         self.get_results()
@@ -199,12 +231,36 @@ class match_outcome_data:
         self.score_sum = []
         score_mean = []
         score_std = []
-        #for gr in grp:
 
         score_mean.append(grp['Away_Goals'].agg(np.mean)) #calculate mean 
         self.score_sum.append(grp['Away_Goals'].agg(np.sum)) #calculate sum
         score_std.append(grp['Away_Goals'].agg(np.std)) #calculate standard deviation
         return 'sum: ', self.score_sum, 'mean: ', score_mean, 'standard deviation: ', score_std
+    
+    def save_to_csv(self): #save dataset as csv
+        self.get_total_team_points()
+        self.get_total_team_goals()
+        cum_data = self.get_cumulative_data()
+        data = cum_data.drop(["Home_Team", "Away_Team","Result", "Link", "League", "Season", "Home_Match_Outcome", "Away_Match_Outcome"],
+                             axis = 1) #remove specified columns from dataframe
+        team_points = self.x.groupby(["Home_Team"]).agg({"Home_Points" : ["sum"], "Away_Points" : ["sum"]})
+        team_goals = self.x.groupby(["Home_Team"]).agg({"Home_Goals" : ["sum"], "Away_Goals" : ["sum"]})
+
+
+        folder = rf"cleaned_datasets/{self.league}/{self.year}" #create folder for each league
+        #rf"../Football-Match-Outcome-Prediction/cleaned_datasets/{self.league}/{self.year}" - achieves same as above
+        if not os.path.exists(folder): #if folder doesn't already exist
+            os.makedirs(folder)
+            team_points.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_points.csv", encoding='utf-8')
+            team_goals.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_goals.csv", encoding='utf-8')
+            data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8') #add index = False to remove index
+        elif os.path.exists(folder):
+            #if folder already exists
+                team_points.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_points.csv", encoding='utf-8')
+                team_goals.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_goals.csv", encoding='utf-8')
+                data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8')
+        
+        return "datasets saved to csv" 
 
     ############ GRAPHS ############
     def show_res_freq(self):
@@ -213,7 +269,6 @@ class match_outcome_data:
     
     def check_home_res(self):
         self.get_results()
-
         result = self.x.sort_values(by=["Result"])
 
         fig = px.bar(result, "Result", 
@@ -230,22 +285,18 @@ class match_outcome_data:
         return fig
 
 
-    '''def get_test(self):
-        self.get_results()
-        #show number of individual scores for home teams in League
-        fig = px.bar(self.score_sum, "Home_Match_Outcome", 
-                    color="Home_Team",
-                    title="Counts of Individual Score Frequency per Home Team",
-                    labels={"Home_Team": "Home Team", "Home_Match_Outcome": "Home Match Outcome"},
-                    height=2000, 
-                    facet_col_wrap=2, 
-                    facet_col_spacing=0.1)
+    def get_team_home_goals(self):
+        self.get_home_goal_stats()
+        #show total number goals for each home team in League
+        fig = px.bar(self.x.groupby(["Home_Team"])["Home_Goals"].sum(), "Home_Goals", color = "Home_Goals", 
+                     height = 500, title=f"Counts of Team Home Goals in {self.league} {self.year}",
+                     labels={"Home_Team": "Home Team", "Home_Goals": "Home Goals"})
 
         fig.update_layout(showlegend=True) #False to hide
         fig.update_xaxes(showticklabels=True, tickangle=45)
         fig.update_yaxes(matches=None, showticklabels=True)
 
-        return fig'''
+        return fig
 
     def get_home_scores(self):
         self.get_results()
@@ -280,21 +331,17 @@ class match_outcome_data:
         fig.update_yaxes(matches=None, showticklabels=True)
         return fig
 
-    def get_away_goals(self):
-        self.get_results()
-        #show number of individual scores for each home team in League
-        self.x.sort_values(by=["Away_Goals"])
-        fig = px.pie(self.x, "Away_Goals",
-                    color="Away_Goals",
-                    title="Counts of Away Goals in League",
-                    labels={"Away_Goals": "Away Goals", "Away_Team": "Away Team"},
-                    height=500,  
-                    )
+    def get_team_away_goals(self):
+        self.get_away_goal_stats()
+        #show total number of goals for each away team in League
+        fig = px.bar(self.x.groupby(["Away_Team"])["Away_Goals"].sum(), "Away_Goals", 
+                     color = "Away_Goals", height = 500, title=f"Counts of Team Away Goals in {self.league} {self.year} ",
+                     labels={"Away_Team": "Away Team", "Away_Goals": "Away Goals"})
 
-        fig.update_layout(showlegend=True, legend_title_text='Number of Goals')
+        fig.update_layout(showlegend=True) #False to hide
         fig.update_xaxes(showticklabels=True, tickangle=45)
         fig.update_yaxes(matches=None, showticklabels=True)
-        
+
         return fig
 
 if __name__ == "__main__": #will only run methods below if script is run directly
