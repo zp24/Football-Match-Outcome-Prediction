@@ -128,28 +128,28 @@ As for the former, this was pretty much done in Milestone 1 as a result of exper
 
 A further method was added to the class to save certain data into a new csv file, including datasets which only included the total points or goals achieved or scored respectively by teams in a certain league and season, and a dataset which showed the cumulative points and goals scored home and away, either per team or wholly. However, the latter dataset could only contain numerical data, so any columns which did not were omitted from the dataset before it was saved as a csv.
 
-def save_to_csv(self): #save dataset as csv
-        self.get_total_team_points()
-        self.get_total_team_goals()
-        cumulative_data = self.get_cumulative_data()
-        data = cumulative_data.drop(["Home_Team", "Away_Team","Result", "Link", "League", "Season", "Home_Match_Outcome", "Away_Match_Outcome"],
-                             axis = 1) #remove specified columns from dataframe
-        team_points = self.x.groupby(["Home_Team"]).agg({"Home_Points" : ["sum"], "Away_Points" : ["sum"]})
-        team_goals = self.x.groupby(["Home_Team"]).agg({"Home_Goals" : ["sum"], "Away_Goals" : ["sum"]})
+	def save_to_csv(self): #save dataset as csv
+		self.get_total_team_points()
+		self.get_total_team_goals()
+		cumulative_data = self.get_cumulative_data()
+		data = cumulative_data.drop(["Home_Team", "Away_Team","Result", "Link", "League", "Season", "Home_Match_Outcome", "Away_Match_Outcome"],
+				     axis = 1) #remove specified columns from dataframe
+		team_points = self.x.groupby(["Home_Team"]).agg({"Home_Points" : ["sum"], "Away_Points" : ["sum"]})
+		team_goals = self.x.groupby(["Home_Team"]).agg({"Home_Goals" : ["sum"], "Away_Goals" : ["sum"]})
 
 
-        folder = rf"cleaned_datasets/{self.league}/{self.year}" #create folder for each league
-        #rf"../Football-Match-Outcome-Prediction/cleaned_datasets/{self.league}/{self.year}" - achieves same as above
-        if not os.path.exists(folder): #if folder doesn't already exist
-            os.makedirs(folder)
-            team_points.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_points.csv", encoding='utf-8')
-            team_goals.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_goals.csv", encoding='utf-8')
-            data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8') #add index = False to remove index
-        elif os.path.exists(folder):
-            #if folder already exists
-                team_points.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_points.csv", encoding='utf-8')
-                team_goals.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_goals.csv", encoding='utf-8')
-                data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8')
+		folder = rf"cleaned_datasets/{self.league}/{self.year}" #create folder for each league
+		#rf"../Football-Match-Outcome-Prediction/cleaned_datasets/{self.league}/{self.year}" - achieves same as above
+		if not os.path.exists(folder): #if folder doesn't already exist
+		    os.makedirs(folder)
+		    team_points.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_points.csv", encoding='utf-8')
+		    team_goals.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_goals.csv", encoding='utf-8')
+		    data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8') #add index = False to remove index
+		elif os.path.exists(folder):
+		    #if folder already exists
+			team_points.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_points.csv", encoding='utf-8')
+			team_goals.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_goals.csv", encoding='utf-8')
+			data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8')
         
         return "datasets saved to csv" 
 ![image](https://user-images.githubusercontent.com/58480783/170560306-45d5811f-08e9-4b37-a868-87b62d7ef041.png)
