@@ -10,12 +10,25 @@ import plotly.express as px
 import plotly.io as pio
 import pickle
 import os
+import sqlalchemy
+from sqlalchemy import create_engine
 
-class match_outcome_data:
+class MatchOutcomeData:
 
     def __init__(self, match = True):
-        #allow user to select league and year without manually changing file path
+
+        '''DATABASE_TYPE = os.environ.get('DB_DATABASE_TYPE')
+        DBAPI = os.environ.get('DB_DBAPI') #database API - API to connect Python with database
+        #use AWS details to connect database - saved in Environment Variables
+        HOST = os.environ.get('DB_HOST1') #endpoint
+        USER = os.environ.get('DB_USER') #username
+        PASSWORD = os.environ.get('DB_PASS')
+        DATABASE = os.environ.get('DB_DATABASE')
+        PORT = os.environ.get('DB_PORT')
+
+        self.engine = create_engine(f'{DATABASE_TYPE}+{DBAPI}://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}')'''
         
+        #allow user to select league and year without manually changing file path
         try: #load football dataset
             self.league = input("Select league: ").replace(" ", "_").lower()
             if match == True:    
@@ -240,8 +253,8 @@ class match_outcome_data:
     def save_to_csv(self): #save dataset as csv
         self.get_total_team_points()
         self.get_total_team_goals()
-        cum_data = self.get_cumulative_data()
-        data = cum_data.drop(["Home_Team", "Away_Team","Result", "Link", "League", "Season", "Home_Match_Outcome", "Away_Match_Outcome"],
+        cumulative_data = self.get_cumulative_data()
+        data = cumulative_data.drop(["Home_Team", "Away_Team","Result", "Link", "League", "Season", "Home_Match_Outcome", "Away_Match_Outcome"],
                              axis = 1) #remove specified columns from dataframe
         team_points = self.x.groupby(["Home_Team"]).agg({"Home_Points" : ["sum"], "Away_Points" : ["sum"]})
         team_goals = self.x.groupby(["Home_Team"]).agg({"Home_Goals" : ["sum"], "Away_Goals" : ["sum"]})
@@ -345,4 +358,4 @@ class match_outcome_data:
         return fig
 
 if __name__ == "__main__": #will only run methods below if script is run directly
-    m_data = match_outcome_data()
+    m_data = MatchOutcomeData()
