@@ -155,3 +155,50 @@ A further method was added to the class to save certain data into a new csv file
 ![image](https://user-images.githubusercontent.com/58480783/170560306-45d5811f-08e9-4b37-a868-87b62d7ef041.png)
 
 This milestone was relatively straightforward given some of the objectives were already achieved in the previous milestone; all that was outstanding was extracting the ELO of each team from the pkl file and later saving the new datasets containing the cumulative goals and scores into a csv file. This of course required some of the knowledge gained from developing a webscraper package and some general knowledge of dictionaries.
+
+## Milestone 3
+
+For this Milestone, an RDS instance needed to be setup for the data to be uploaded to it. Given this was also required for the webscraper project, this step was very straightforward as most of the settings were already established, with the relevant commands and methods in VSCode just needing to be copied and pasted into a separate script. 
+
+	import csv
+	import os
+	import sqlalchemy
+	from sqlalchemy import create_engine
+	import pandas as pd
+
+	DATABASE_TYPE = os.environ.get('DB_DATABASE_TYPE')
+	DBAPI = os.environ.get('DB_DBAPI') #database API - API to connect Python with database
+	    #use AWS details to connect database - saved in Environment Variables
+	HOST = os.environ.get('DB_HOST1') #endpoint
+	USER = os.environ.get('DB_USER') #username
+	PASSWORD = os.environ.get('DB_PASS')
+	DATABASE = os.environ.get('DB_DATABASE')
+	PORT = os.environ.get('DB_PORT')
+
+	engine = create_engine(f'{DATABASE_TYPE}+{DBAPI}://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}')
+	league = input("Select league: ").replace(" ", "_").lower()
+	year = input("Select year: ")
+	file_path = rf'cleaned_datasets/{league}/{year}/cleaned_dataset_{league}_{year}.csv'
+	try:
+	    if os.path.exists(file_path):
+		with open(file_path) as file:
+		    data = csv.reader(file) #load json file
+		    #print("Type:", type(data))
+		    df = pd.DataFrame(data) #save data in json file in dataframe
+		sql_table = df.to_sql(f"{league}_{year}", con=engine, if_exists='replace', index=False) #upload pandas dataframe to sql table                                                                                         #use replace instead of append if changing everything in sql table
+
+	    else:
+		print("This file does not exist - please create before trying to load to database")
+	except:
+	    "File not loaded to database"
+	sql_table #prints number of entries in table
+
+With the above, the user can simply select and upload their csv file to the database (provided the csv file has already been created, in which case they will need to complete this step before uploading the data to the RDS instance), although this code can easily be copied into match_data.py which will save the user some time in uploading since they would not need to choose a league and season.
+
+Once the data has been uploaded to the database, it can easily be viewed and analysed either via the Database extension in VSCode or pgAdmin4 using the relevant SQL commands.
+![image](https://user-images.githubusercontent.com/58480783/170873718-6721b595-c165-4317-b27f-bb0cc8aa4591.png)
+
+Additionally, the pipeline had already been created whilst working through Milestone 1, so nothing needed to be done for this step except for changing the class name to MatchOutcomeData and the script to pipeline.py so it could be easily distinguished from other scripts in the directory.
+![image](https://user-images.githubusercontent.com/58480783/170873467-7aadd84e-5ab4-4ebc-9cff-8d41e6ea7376.png)
+
+This Milestone required very little time to complete given the objectives had already been met; all that was required was to setup and establish a connection with the RDS instance so that any data uploaded to it could be analysed in an SQL table.
