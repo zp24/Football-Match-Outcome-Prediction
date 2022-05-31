@@ -67,7 +67,7 @@ class MatchOutcomeData:
         except:
             "ELO data failed to load"
 
-        #display graphs
+        #display and add white background to graphs
         pio.renderers.default = "notebook" #set default renderer to 'notebook' or 'vscode'
 
         return None
@@ -266,12 +266,12 @@ class MatchOutcomeData:
             os.makedirs(folder)
             team_points.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_points.csv", encoding='utf-8')
             team_goals.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_goals.csv", encoding='utf-8')
-            data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8') #add index = False to remove index
+            data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8', index = False) #add index = False to remove index
         elif os.path.exists(folder):
             #if folder already exists
                 team_points.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_points.csv", encoding='utf-8')
                 team_goals.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_goals.csv", encoding='utf-8')
-                data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8')
+                data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8', index = False)
         
         return "datasets saved to csv" 
 
