@@ -174,6 +174,17 @@ class MatchOutcomeData:
 
     def get_cumulative_data(self): 
         self.get_results()
+
+        #replace match outcome values with ints
+        self.x['Home_Match_Outcome'].replace(to_replace=['Win'], value='0', inplace=True)
+        self.x['Home_Match_Outcome'].replace(to_replace=['Loss'], value='1', inplace=True)
+        self.x['Home_Match_Outcome'].replace(to_replace=['Draw'], value='2', inplace=True)
+
+        self.x['Away_Match_Outcome'].replace(to_replace=['Win'], value='0', inplace=True)
+        self.x['Away_Match_Outcome'].replace(to_replace=['Loss'], value='1', inplace=True)
+        self.x['Away_Match_Outcome'].replace(to_replace=['Draw'], value='2', inplace=True)
+
+        #cumulative data
         self.x["Total_Home_Goals_So_Far"] = self.x.groupby(["Home_Team"])["Home_Goals"].cumsum() #cumulative addition of goals for each home team
         self.x["Total_Away_Goals_So_Far"] = self.x.groupby(["Home_Team"])["Away_Goals"].cumsum() #cumulative addition of goals for each home team
         self.x["Cumulative_Home_Goals"] = self.x["Home_Goals"].cumsum() #cumulative addition of goals for each home team
@@ -250,11 +261,25 @@ class MatchOutcomeData:
         score_std.append(grp['Away_Goals'].agg(np.std)) #calculate standard deviation
         return 'sum: ', self.score_sum, 'mean: ', score_mean, 'standard deviation: ', score_std
     
+    def convert_outcome_to_int(self):
+        self.get_results()
+
+        #replace home and match outcome values to numerical
+        self.x['Home_Match_Outcome'].replace(to_replace=['Win'], value='0', inplace=True)
+        self.x['Home_Match_Outcome'].replace(to_replace=['Loss'], value='1', inplace=True)
+        self.x['Home_Match_Outcome'].replace(to_replace=['Draw'], value='2', inplace=True)
+
+        self.x['Away_Match_Outcome'].replace(to_replace=['Win'], value='0', inplace=True)
+        self.x['Away_Match_Outcome'].replace(to_replace=['Loss'], value='1', inplace=True)
+        self.x['Away_Match_Outcome'].replace(to_replace=['Draw'], value='2', inplace=True)
+        return self.x
+    
     def save_to_csv(self): #save dataset as csv
+        #self.convert_outcome_to_int()
         self.get_total_team_points()
         self.get_total_team_goals()
         cumulative_data = self.get_cumulative_data()
-        data = cumulative_data.drop(["Home_Team", "Away_Team","Result", "Link", "League", "Season", "Home_Match_Outcome", "Away_Match_Outcome"],
+        data = cumulative_data.drop(["Home_Team", "Away_Team","Result", "Link", "League", "Season"],
                              axis = 1) #remove specified columns from dataframe
         team_points = self.x.groupby(["Home_Team"]).agg({"Home_Points" : ["sum"], "Away_Points" : ["sum"]})
         team_goals = self.x.groupby(["Home_Team"]).agg({"Home_Goals" : ["sum"], "Away_Goals" : ["sum"]})
@@ -266,12 +291,12 @@ class MatchOutcomeData:
             os.makedirs(folder)
             team_points.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_points.csv", encoding='utf-8')
             team_goals.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_goals.csv", encoding='utf-8')
-            data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8', index = False) #add index = False to remove index
+            data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8', index = True) #add index = False to remove index
         elif os.path.exists(folder):
             #if folder already exists
                 team_points.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_points.csv", encoding='utf-8')
                 team_goals.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_goals.csv", encoding='utf-8')
-                data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8', index = False)
+                data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8', index = True)
         
         return "datasets saved to csv" 
 
