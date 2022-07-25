@@ -15,7 +15,7 @@ from sqlalchemy import create_engine
 
 class MatchOutcomeData:
 
-    def __init__(self, match = True):
+    def __init__(self, match = True, single = False):
 
         '''DATABASE_TYPE = os.environ.get('DB_DATABASE_TYPE')
         DBAPI = os.environ.get('DB_DBAPI') #database API - API to connect Python with database
@@ -30,7 +30,28 @@ class MatchOutcomeData:
         
         #allow user to select league and year without manually changing file path
         try: #load football dataset
-            self.league = input("Select league: ").replace(" ", "_").lower()
+            if single == True:
+                self.league = input("Select league: ").replace(" ", "_").lower()
+            else:
+                season = range(1990, 2022)
+                league = ["premier_league","2_liga", "bundesliga", "championship", "eerste_divisie", "ligue_1", "ligue_2", "eredivisie",
+                "primeira_liga", "primera_division", "segunda_division", "eredivisie", "segunda_liga", "serie_a", "serie_b"]
+                files = []
+                for l in league:
+                    for i in season:
+                        self.filepath = f'Football-Dataset/{l}/'
+                        self.file = rf'Results_{i}_{l}.csv'
+                        if os.path.exists(self.filepath):
+                            #print("this works")
+                            files.append(self.filepath+self.file)
+                        else:
+                            print("filepath does not exist")
+                data = []
+                for f in files:
+                    data.append(pd.read_csv(f))
+
+                self.x = pd.concat(data)
+                
             if match == True:    
                 self.year = input("Select year: ")
                 self.league_ = self.league
@@ -127,10 +148,13 @@ class MatchOutcomeData:
         split_result = self.x["Result"].str.split("-") #split results at '-' to separate numbers
 
         for res in split_result:
-            #print("Home goals: ", res[0][0])    
-            self.home_goal.append(int(res[0][0])) #convert to int to add goals together -- default type is str
-            #print("Away goals: ", res[1][0])
-            away_goal.append(int(res[1][0]))
+            #print("Home goals: ", res[0][0])   
+            try: 
+                self.home_goal.append(int(res[0][0])) #convert to int to add goals together -- default type is str
+                #print("Away goals: ", res[1][0])
+                away_goal.append(int(res[1][0]))
+            except IndexError:
+                return None
                 
             #Determine match outcomes
             #Win
