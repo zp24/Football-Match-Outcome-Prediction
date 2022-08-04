@@ -12,10 +12,11 @@ import pickle
 import os
 import sqlalchemy
 from sqlalchemy import create_engine
+from tqdm import tqdm
 
 class MatchOutcomeData:
 
-    def __init__(self, match = True, single = False):
+    def __init__(self, match = True, single = True):
 
         '''DATABASE_TYPE = os.environ.get('DB_DATABASE_TYPE')
         DBAPI = os.environ.get('DB_DBAPI') #database API - API to connect Python with database
@@ -27,16 +28,16 @@ class MatchOutcomeData:
         PORT = os.environ.get('DB_PORT')
 
         self.engine = create_engine(f'{DATABASE_TYPE}+{DBAPI}://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}')'''
-        
+        season = range(1990, 2022)
+        league = ["premier_league","2_liga", "bundesliga", "championship", "eerste_divisie", "ligue_1", "ligue_2", "eredivisie",
+                "primeira_liga", "primera_division", "segunda_division", "segunda_liga", "serie_a", "serie_b"]
+        files = []
         #allow user to select league and year without manually changing file path
         try: #load football dataset
+            
             if single == True:
-                self.league = input("Select league: ").replace(" ", "_").lower()
-            else:
-                season = range(1990, 2022)
-                league = ["premier_league","2_liga", "bundesliga", "championship", "eerste_divisie", "ligue_1", "ligue_2", "eredivisie",
-                "primeira_liga", "primera_division", "segunda_division", "eredivisie", "segunda_liga", "serie_a", "serie_b"]
-                files = []
+                self.league = input(f"Select league from list {league}: ").replace(" ", "_").lower()
+            else:                
                 for l in league:
                     for i in season:
                         self.filepath = f'Football-Dataset/{l}/'
@@ -53,12 +54,25 @@ class MatchOutcomeData:
                 self.x = pd.concat(data)
                 
             if match == True:    
-                self.year = input("Select year: ")
-                self.league_ = self.league
+                self.year = [year for year in season]
                 #dataframes
                 pd.set_option('display.max_rows', None) #display all rows in table
-                self.file = f"Football-Dataset/{self.league}/Results_{self.year}_{self.league_}.csv"
-                self.x = pd.read_csv(self.file)
+                for i in season:
+                    if self.league in league:
+                        filepath = rf'Football-Dataset/'
+                        file = rf'{self.league}/Results_{i}_{self.league}.csv'
+                        if os.path.exists(filepath):
+                            #print("this works")
+                            files.append(filepath+file)
+                        else:
+                            print("filepath does not exist")
+                        data = []
+                        for f in files:
+                            data.append(pd.read_csv(f))
+                        self.x = pd.concat(data)
+                    else:
+                        print("Select league from list")
+                
 
             #self.x.head() #display 5 rows of dataset
         except:
@@ -74,12 +88,9 @@ class MatchOutcomeData:
             "Team_Info failed to load"
 
         try: #load Match_Info file
-            if match == True:
-                self.match_info = pd.read_csv("Match_Info.csv")
-            else:
-                self.year = input("Select year: ")
-                self.team = input(f"Select team from {self.league}").lower().title()
-                self.match_info = pd.read_csv("Match_Info.csv")
+            
+            self.match_info = pd.read_csv("Match_Info.csv")
+         
         except:
             "Match_Info failed to load"
         
@@ -99,10 +110,13 @@ class MatchOutcomeData:
     def get_data_types(self): #print data types
         return self.x.dtypes 
 
-    def get_teams(self): #confirm number of teams in league and list of teams
+    def get_teams(self, single = False): #confirm number of teams in league and list of teams
         self.x["Home_Team"][self.x["Home_Team"]!= "Away Team"].unique()
-        return f'Number of teams in {self.league}: {len(set(self.x["Home_Team"]))}', set(self.x["Home_Team"])
-
+        if single == True:
+            return f'Number of teams in {self.league}: {len(set(self.x["Home_Team"]))}', set(self.x["Home_Team"])
+        else:
+            return f'Number of teams in dataset: {len(set(self.x["Home_Team"]))}', set(self.x["Home_Team"])
+            
     def find_team(self, text): #display data of specific team using "text"
         return self.x[self.x["Home_Team"].str.contains(text.lower().title())] 
 
@@ -147,37 +161,63 @@ class MatchOutcomeData:
             
         split_result = self.x["Result"].str.split("-") #split results at '-' to separate numbers
 
-        for res in split_result:
+        for i, res in enumerate(tqdm(split_result, desc = "Splitting results")):
             #print("Home goals: ", res[0][0])   
             try: 
                 self.home_goal.append(int(res[0][0])) #convert to int to add goals together -- default type is str
                 #print("Away goals: ", res[1][0])
                 away_goal.append(int(res[1][0]))
+
+                #Determine match outcomes
+                #Win
+                if int(res[0][0]) > int(res[1][0]):
+                    home_match_outcome.append("Win")
+                    home_points.append(3) #3 points for a win 
+
+                    away_match_outcome.append("Loss")   
+                    away_points.append(0)           
+                #Draw
+                elif int(res[0][0]) == int(res[1][0]):
+                    home_match_outcome.append("Draw")
+                    home_points.append(1) #1 point for a draw
+
+                    away_match_outcome.append("Draw")  
+                    away_points.append(1)   
+                #Loss    
+                else:
+                    home_match_outcome.append("Loss")
+                    home_points.append(0) #0 points for a loss
+
+                    away_match_outcome.append("Win")  
+                    away_points.append(3) 
             except IndexError:
-                return None
+                l = list(res)
+                print(l)
+                for c in l:
+                    x = int(c[0])
+                    y = int(c[1])
+                #home_goal.append(x) #convert to int to add goals together -- default type is str
+                            #print("Away goals: ", res[1][0])
+                #away_goal.append(y)
+                if x > y:
+                    home_match_outcome.append("Win")
+                    home_points.append(3) #3 points for a win 
+                    away_match_outcome.append("Loss")   
+                    away_points.append(0)   
+                elif x == y:
+                    home_match_outcome.append("Draw")
+                    home_points.append(1) #1 point for a draw
+
+                    away_match_outcome.append("Draw")  
+                    away_points.append(1)
+                else:
+                    home_match_outcome.append("Loss")
+                    home_points.append(0) #0 points for a loss
+
+                    away_match_outcome.append("Win")  
+                    away_points.append(3) 
                 
-            #Determine match outcomes
-            #Win
-            if int(res[0][0]) > int(res[1][0]):
-                home_match_outcome.append("Win")
-                home_points.append(3) #3 points for a win 
-
-                away_match_outcome.append("Loss")   
-                away_points.append(0)           
-            #Draw
-            elif int(res[0][0]) == int(res[1][0]):
-                home_match_outcome.append("Draw")
-                home_points.append(1) #1 point for a draw
-
-                away_match_outcome.append("Draw")  
-                away_points.append(1)   
-            #Loss    
-            else:
-                home_match_outcome.append("Loss")
-                home_points.append(0) #0 points for a loss
-
-                away_match_outcome.append("Win")  
-                away_points.append(3)  
+             
             '''
             #determine match outcome without iterating and populate dataset
             self.x['Home_Win'] = (self.x['Home_Goals'] > self.x['Away_Goals']).astype(int)
@@ -186,8 +226,8 @@ class MatchOutcomeData:
             '''
         
         #add lists to existing dataframe/set
-        self.x["Home_Goals"] = self.home_goal
-        self.x["Away_Goals"] = away_goal
+        #self.x["Home_Goals"] = self.home_goal
+        #self.x["Away_Goals"] = away_goal
         self.x["Home_Match_Outcome"] = home_match_outcome
         self.x["Home_Points"] = home_points
         self.x["Away_Match_Outcome"] = away_match_outcome
@@ -209,10 +249,10 @@ class MatchOutcomeData:
         self.x['Away_Match_Outcome'].replace(to_replace=['Draw'], value='2', inplace=True)
 
         #cumulative data
-        self.x["Total_Home_Goals_So_Far"] = self.x.groupby(["Home_Team"])["Home_Goals"].cumsum() #cumulative addition of goals for each home team
-        self.x["Total_Away_Goals_So_Far"] = self.x.groupby(["Home_Team"])["Away_Goals"].cumsum() #cumulative addition of goals for each home team
-        self.x["Cumulative_Home_Goals"] = self.x["Home_Goals"].cumsum() #cumulative addition of goals for each home team
-        self.x["Cumulative_Away_Goals"] = self.x["Away_Goals"].cumsum() #cumulative addition of goals for each home team
+        #self.x["Total_Home_Goals_So_Far"] = self.x.groupby(["Home_Team"])["Home_Goals"].cumsum() #cumulative addition of goals for each home team
+        #self.x["Total_Away_Goals_So_Far"] = self.x.groupby(["Home_Team"])["Away_Goals"].cumsum() #cumulative addition of goals for each home team
+        #self.x["Cumulative_Home_Goals"] = self.x["Home_Goals"].cumsum() #cumulative addition of goals for each home team
+        #self.x["Cumulative_Away_Goals"] = self.x["Away_Goals"].cumsum() #cumulative addition of goals for each home team
         self.x["Total_Home_Points_So_Far"] = self.x.groupby(["Home_Team"])["Home_Points"].cumsum() #cumulative addition of points for each home team
         self.x["Total_Away_Points_So_Far"] = self.x.groupby(["Away_Team"])["Away_Points"].cumsum() #cumulative addition of points for each away team
         self.x["Cumulative_Home_Points"] = self.x["Home_Points"].cumsum() #cumulative sum of home points
@@ -234,25 +274,30 @@ class MatchOutcomeData:
         return self.x.groupby(["Away_Team"]).agg({"Away_Goals" : ["sum"]})
     '''
     
-    def get_total_team_points(self):
+    def get_total_team_points(self, single = False):
         self.get_results()
-        fig = px.bar(self.x.groupby(["Home_Team"])["Home_Points"].sum(), "Home_Points", 
-                     color = "Home_Points", height = 500, title=f"Counts of Team Home Points in {self.league} {self.year} ",
-                     labels={"Home_Team": "Home Team", "Home_Points": "Home Points"})
+        pd.set_option('display.max_rows', None) #display all rows in table
+        if single == True:
+            fig = px.bar(self.x.groupby(["Home_Team"])["Home_Points"].sum(), "Home_Points", 
+                        color = "Home_Points", height = 500, title=f"Counts of Team Home Points in {self.league} {self.year} ",
+                        labels={"Home_Team": "Home Team", "Home_Points": "Home Points"})
 
-        fig.update_layout(showlegend=True) #False to hide
-        fig.update_xaxes(showticklabels=True, tickangle=45)
-        fig.update_yaxes(matches=None, showticklabels=True)
+            fig.update_layout(showlegend=True) #False to hide
+            fig.update_xaxes(showticklabels=True, tickangle=45)
+            fig.update_yaxes(matches=None, showticklabels=True)
 
-        fig1 = px.bar(self.x.groupby(["Away_Team"])["Away_Points"].sum(), "Away_Points", 
-                     color = "Away_Points", height = 500, title=f"Counts of Team Away Points in {self.league} {self.year} ",
-                     labels={"Away_Team": "Away Team", "Away_Points": "Away Points"})
+            fig1 = px.bar(self.x.groupby(["Away_Team"])["Away_Points"].sum(), "Away_Points", 
+                        color = "Away_Points", height = 500, title=f"Counts of Team Away Points in {self.league} {self.year} ",
+                        labels={"Away_Team": "Away Team", "Away_Points": "Away Points"})
 
-        fig1.update_layout(showlegend=True) #False to hide
-        fig1.update_xaxes(showticklabels=True, tickangle=45)
-        fig1.update_yaxes(matches=None, showticklabels=True)
-        #return self.x.groupby(["League","Season","Home_Team"]).agg({"Home_Points" : ["sum"], "Away_Points" : ["sum"]}) #show total points per Round per Home Team only
-        return self.x.groupby(["Home_Team"]).agg({"Home_Points" : ["sum"], "Away_Points" : ["sum"]})
+            fig1.update_layout(showlegend=True) #False to hide
+            fig1.update_xaxes(showticklabels=True, tickangle=45)
+            fig1.update_yaxes(matches=None, showticklabels=True)
+
+            return self.x.groupby(["Home_Team"]).agg({"Home_Points" : ["sum"], "Away_Points" : ["sum"]})
+        else:
+            #return self.x.groupby(["League","Season","Home_Team"]).agg({"Home_Points" : ["sum"], "Away_Points" : ["sum"]}) #show total points per Round per Home Team only
+            return self.x.groupby(["Home_Team", "League"]).agg({"Home_Points" : ["sum"], "Away_Points" : ["sum"]})
 
     def get_team_stats(self): #get win,loss, draw stats of each team
         self.get_results()
@@ -298,31 +343,45 @@ class MatchOutcomeData:
         self.x['Away_Match_Outcome'].replace(to_replace=['Draw'], value='2', inplace=True)
         return self.x
     
-    def save_to_csv(self): #save dataset as csv
+    def save_to_csv(self, single = True): #save dataset as csv
         #self.convert_outcome_to_int()
         self.get_total_team_points()
-        self.get_total_team_goals()
+        #self.get_total_team_goals()
         cumulative_data = self.get_cumulative_data()
         data = cumulative_data.drop(["Home_Team", "Away_Team","Result", "Link", "League", "Season"],
                              axis = 1) #remove specified columns from dataframe
         team_points = self.x.groupby(["Home_Team"]).agg({"Home_Points" : ["sum"], "Away_Points" : ["sum"]})
-        team_goals = self.x.groupby(["Home_Team"]).agg({"Home_Goals" : ["sum"], "Away_Goals" : ["sum"]})
+        #team_goals = self.x.groupby(["Home_Team"]).agg({"Home_Goals" : ["sum"], "Away_Goals" : ["sum"]})
 
-
-        folder = rf"cleaned_datasets/{self.league}/{self.year}" #create folder for each league
-        #rf"../Football-Match-Outcome-Prediction/cleaned_datasets/{self.league}/{self.year}" - achieves same as above
-        if not os.path.exists(folder): #if folder doesn't already exist
-            os.makedirs(folder)
-            team_points.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_points.csv", encoding='utf-8')
-            team_goals.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_goals.csv", encoding='utf-8')
-            data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8', index = True) #add index = False to remove index
-        elif os.path.exists(folder):
-            #if folder already exists
-                team_points.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_points.csv", encoding='utf-8')
-                team_goals.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}_goals.csv", encoding='utf-8')
-                data.to_csv(f"{folder}/cleaned_dataset_{self.league}_{self.year}.csv", encoding='utf-8', index = True)
-        
-        return "datasets saved to csv" 
+        if single == True:
+            folder = rf"cleaned_datasets/{self.league}" #create folder for each league
+            #rf"../Football-Match-Outcome-Prediction/cleaned_datasets/{self.league}/{self.year}" - achieves same as above
+            if not os.path.exists(folder): #if folder doesn't already exist
+                os.makedirs(folder)
+                team_points.to_csv(f"{folder}/cleaned_dataset_{self.league}_points.csv", encoding='utf-8')
+                #team_goals.to_csv(f"{folder}/cleaned_dataset_{self.league}_goals.csv", encoding='utf-8')
+                data.to_csv(f"{folder}/cleaned_dataset_{self.league}.csv", encoding='utf-8', index = True) #add index = False to remove index
+            elif os.path.exists(folder):
+                #if folder already exists
+                    team_points.to_csv(f"{folder}/cleaned_dataset_{self.league}_points.csv", encoding='utf-8')
+                    #team_goals.to_csv(f"{folder}/cleaned_dataset_{self.league}_goals.csv", encoding='utf-8')
+                    data.to_csv(f"{folder}/cleaned_dataset_{self.league}.csv", encoding='utf-8', index = True) #add index = False to remove index
+            
+            return "datasets saved to csv" 
+        else:
+            folder = rf"cleaned_datasets/" #create folder for each league
+            if not os.path.exists(folder): #if folder doesn't already exist
+                os.makedirs(folder)
+                team_points.to_csv(f"{folder}/cleaned_dataset_points.csv", encoding='utf-8')
+                #team_goals.to_csv(f"{folder}/cleaned_dataset_goals.csv", encoding='utf-8')
+                data.to_csv(f"{folder}/cleaned_dataset.csv", encoding='utf-8', index = True) #add index = False to remove index
+            elif os.path.exists(folder):
+                #if folder already exists
+                    team_points.to_csv(f"{folder}/cleaned_dataset_points.csv", encoding='utf-8')
+                    #team_goals.to_csv(f"{folder}/cleaned_dataset_goals.csv", encoding='utf-8')
+                    data.to_csv(f"{folder}/cleaned_dataset.csv", encoding='utf-8', index = True)
+            
+            return "dataset saved to csv" 
 
     ############ GRAPHS ############
     def show_res_freq(self):

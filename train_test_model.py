@@ -17,22 +17,29 @@ import time
 
 
 class TrainTestModel:
-    def __init__(self, match = True):
+    def __init__(self, single = True):
         pio.renderers.default = "vscode" #set default renderer to 'notebook' or 'vscode'
+        season = range(1990, 2022)
+        league = ["premier_league","2_liga", "bundesliga", "championship", "eerste_divisie", "ligue_1", "ligue_2", "eredivisie",
+                "primeira_liga", "primera_division", "segunda_division", "segunda_liga", "serie_a", "serie_b"]
         
-        #allow user to select league and year without manually changing file path
+        #allow user to select league without manually changing file path
         try: #load football dataset
-            self.league = input("Select league: ").replace(" ", "_").lower()
-            if match == True:    
-                self.year = input("Select year: ")
-                self.league_ = self.league
-                #dataframes
-                pd.set_option('display.max_rows', None) #display all rows in table
-                self.file = f"cleaned_datasets/{self.league}/{self.year}/cleaned_dataset_{self.league_}_{self.year}.csv"
-                self.x = pd.read_csv(self.file)
+            pd.set_option('display.max_rows', None) #display all rows in table
+            if single == True:
+                self.league = input(f"Select league: {league}").replace(" ", "_").lower()
+                for i in season:
+                    if self.league in league:
+                        self.file = f"cleaned_datasets/{self.league}/cleaned_dataset_{self.league}.csv"
+                        self.x = pd.read_csv(self.file)
+                    else:
+                        print("Select league from list")
                 #rename index column to Match_Number and apply to DataFrames
-                self.x = self.x.rename({"Unnamed: 0": "Match_Number"}, axis= 'columns') 
-
+                
+            else:
+                self.file = f"cleaned_datasets/cleaned_dataset.csv"
+                self.x = pd.read_csv(self.file)
+            self.x = self.x.rename({"Unnamed: 0": "Match_Number"}, axis= 'columns') 
             #self.x.head() #display 5 rows of dataset
         except:
             f"{self.file} failed to load"
@@ -224,13 +231,16 @@ class TrainTestModel:
     
 
     ## Save Model ## 
-    def save_to_csv(self):
+    def save_to_csv(self, single = True):
         round = self.x["Round"]
         X_submission = self.x.drop(["Round"], axis=1)
         X_scale_sub = self.ss.transform(X_submission)
         y_submission = self.rf.predict(X_scale_sub) #lr = LogisticRegression #rf = RandomForestClassifier
         my_dict = {"Round": round, "Home_Match_Outcome": y_submission}
-        submission = pd.DataFrame(my_dict).to_csv("submission.csv", index=False) #load dictionary in DataFrame and save to cs
+        if single == True:
+            submission = pd.DataFrame(my_dict).to_csv(f"submission_{self.league}.csv", index=False) #load dictionary in DataFrame and save to csv
+        else:
+            submission = pd.DataFrame(my_dict).to_csv("full_dataset_submission.csv", index=False) #load dictionary in DataFrame and save to csv
         return "Model saved to csv"
     
     def save_baseline_pickle(self):
