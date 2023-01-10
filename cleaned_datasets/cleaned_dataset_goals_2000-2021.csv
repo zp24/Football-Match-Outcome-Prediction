@@ -1,0 +1,483 @@
+,Home_Goals,Away_Goals
+,sum,sum
+Home_Team,,
+1860 München,452,367
+AC Arezzo,82,54
+AC Monza,69,57
+ADO Den Haag,597,538
+AFC Bournemouth,176,169
+AGOVV Apeldoorn,398,322
+AS Gubbio 1910,23,24
+AZ Alkmaar,750,401
+Academico Viseu,122,80
+Académica,485,357
+Ajaccio,491,388
+Ajax,1021,282
+Alavés,434,380
+Albacete,431,371
+AlbinoLeffe,245,223
+Alcorcón,286,185
+Alcoyano,25,33
+Alemannia Aachen,369,276
+Algeciras,21,23
+Alicante,21,38
+Almere City,178,216
+Almería,552,407
+Alverca,123,123
+AlzanoCene,27,25
+Amiens SC,325,264
+Ancona,178,137
+Angers SCO,397,289
+Arles,119,117
+Arminia Bielefeld,464,396
+Arouca,74,85
+Arsenal,893,364
+Ascoli,461,411
+Aston Villa,445,402
+At. Malagueño,64,79
+Atalanta,592,384
+Athletic,620,460
+Atlético,746,353
+Atlético B,27,27
+Atlético CP,88,0
+Auxerre,552,372
+Avellino,246,214
+B. Dortmund,756,362
+B. Leverkusen,739,436
+B. Mönchengladbach,633,403
+BV Veendam ,208,492
+Barcelona,1137,324
+Barcelona B,208,167
+Barnsley,144,103
+Bastia,465,287
+Bayern München,1011,296
+Beauvais Oise,51,46
+Beira Mar SC,327,452
+Belenenses,529,437
+Benevento,145,118
+Benfica,817,246
+Benfica II,464,332
+Besancon RC,24,19
+Bilbao Ath.,20,22
+Birmingham City,294,230
+Blackburn Rovers,390,302
+Blackpool,30,37
+Boavista,394,266
+Bologna,459,399
+Bolton Wanderers,361,314
+Boulogne,110,100
+Bourg-Péronnas,90,89
+Bradford City,137,167
+Braunschweig,241,195
+Brentford,35,19
+Brescia,567,405
+Brighton & Hove Albion,132,159
+Bristol City,15,24
+Burgos,12,18
+Burnley,309,302
+Béziers,13,19
+CA Bastia,15,29
+CD Badajoz,85,96
+CD Castellón,149,104
+CD Guadalajara,55,58
+CD Logroñés,30,24
+CD Santa Clara,374,378
+CD Toledo,20,25
+CF Extremadura,80,52
+CS Louhans Cuiseaux,18,26
+Caen,522,425
+Cagliari,554,451
+Calcio Foggia,61,53
+Calcio Portogruaro-Summaga,22,28
+Cambuur,335,250
+Campomaiorense,33,40
+Cannes,44,37
+Cardiff City,139,141
+Carpi,145,129
+Catania,368,248
+Catanzaro,45,62
+Celta,614,490
+Cesena,384,298
+Chambly,29,47
+Charlton Athletic,216,196
+Chateauroux,477,382
+Chaves,306,232
+Chelsea,866,326
+Chemnitzer,42,52
+Chievo,469,403
+Cittadella,384,315
+Ciudad de Murcia,121,87
+Clermont,426,304
+Como,71,84
+Compostela,78,75
+Cosenza Calcio,95,82
+Cova Piedade,38,188
+Coventry City,196,165
+Cremonese,117,101
+Creteil,272,215
+Crewe Alexandra,150,151
+Crotone,489,376
+Crystal Palace,348,336
+Cultural Leonesa,33,26
+Cádiz,296,203
+Córdoba,495,419
+Darmstadt 98,163,142
+De Graafschap,510,423
+Den Bosch,242,224
+Deportivo,619,454
+Derby County,203,234
+Desportivo Aves,603,431
+Dijon FCO,429,339
+Dordrecht,353,270
+Dunkerque,16,13
+Dynamo Dresden,221,197
+ES Wasquehal,90,79
+Eibar,407,329
+Eintracht Frankfurt,609,479
+Elche,563,449
+Emmen,395,518
+Empoli,621,435
+Energie Cottbus,399,318
+Erzgebirge Aue,356,273
+Espanyol,580,481
+Espinho,272,204
+Estoril,549,295
+Estrela Amadora,123,123
+Everton,661,450
+Evian Thonon Gaillard,160,136
+Excelsior,514,538
+Extremadura,41,51
+FC Augsburg,379,324
+FC Carl Zeiss Jena,46,51
+FC Cartagena,111,101
+FC Eindhoven,390,318
+FC Felgueiras,34,204
+FC Gueugnon,203,166
+FC Libourne Saint Seurin,50,55
+FC Maia,272,204
+FC Marco,136,272
+FC Martigues,39,41
+FC Omniworld,152,228
+FC Rouen 1899,19,23
+FC Savoia 1908,20,21
+FC St. Pauli,469,380
+FC Volendam,414,278
+FSV Frankfurt,171,188
+Famalicão,117,47
+Farense,238,114
+Fatima,60,0
+Feirense,238,276
+Fermana,22,25
+Feyenoord,861,347
+Fiorentina,552,353
+Fortuna Düsseldorf,305,246
+Fortuna Köln,24,20
+Fortuna Sittard,592,640
+Frosinone,326,283
+Fuenlabrada,45,36
+Fulham,462,385
+Gallipoli ,22,41
+Gazélec Ajaccio,135,142
+Genoa,627,474
+Getafe,531,406
+Gil Vicente,610,353
+Gillingham,153,142
+Gimnàstic Tarragona,324,303
+Girona,385,249
+Girondins Bordeaux,585,360
+Go Ahead Eagles,622,390
+Gondomar,226,120
+Granada,277,225
+Granada 74,24,22
+Grenoble,310,229
+Greuther Fürth,607,425
+Grimsby Town,113,119
+Groningen,535,390
+Grosseto,196,159
+Guingamp,541,400
+HFC Haarlem ,486,524
+Hamburger SV,574,429
+Hannover 96,611,501
+Hansa Rostock,279,246
+Heerenveen,712,472
+Heidenheim,197,132
+Hellas Verona,435,358
+Helmond Sport,643,427
+Heracles,904,368
+Hertha BSC,582,459
+Hoffenheim,406,311
+Holstein Kiel,111,80
+Huddersfield Town,125,124
+Huesca,287,223
+Hull City,107,145
+Hércules,280,206
+Ingolstadt 04,227,223
+Inter,663,323
+Ipswich Town,241,157
+Istres,249,217
+Jahn Regensburg,133,145
+Jong AZ,0,0
+Jong Ajax,76,136
+Jong PSV,92,262
+Jong Twente,114,0
+Jong Utrecht,34,68
+Juve Stabia,113,120
+Juventus,724,247
+Kaiserslautern,494,347
+Karlsruher SC,424,370
+Kickers Offenbach FC,94,102
+Köln,592,470
+Las Palmas,575,427
+Latina,89,81
+Lazio,590,344
+Le Havre,574,356
+Le Mans,348,259
+Lecce,348,300
+Leeds United,195,161
+Leganés,267,224
+Leicester,360,286
+Leixões,439,211
+Lens,562,379
+Levante,616,482
+Leça FC,68,68
+Lille,651,325
+Liverpool,820,322
+Livorno,399,347
+Llagostera,56,34
+Lleida,116,95
+Lorca Deportiva,55,45
+Lorca FC,25,28
+Lorient,572,401
+Lugo,239,201
+Luton Town,23,22
+MSV Duisburg,449,392
+MVV Maastricht,446,552
+Mafra,72,48
+Magdeburg,16,19
+Mainz 05,584,439
+Mallorca,588,452
+Man. City,887,381
+Man. Utd,894,314
+Mantova,136,88
+Marítimo,480,354
+Marítimo II,42,0
+Messina,174,133
+Metz,499,406
+Middlesbrough,300,277
+Milan,593,299
+Millwall,157,110
+Mirandés,160,141
+Modena,388,261
+Monaco,685,393
+Montpellier,578,384
+Moreirense,382,254
+Málaga,583,466
+Mérida CP,23,15
+NAC Breda,620,432
+NEC Nijmegen,437,444
+Nacional,591,409
+Nancy,526,413
+Nantes,514,402
+Napoli,657,324
+Naval,260,476
+Newcastle,561,448
+Nice,554,368
+Niort,396,322
+Nocerina,30,36
+Norwich City,344,266
+Nottingham Forest,218,158
+Novara,200,147
+Numancia,610,424
+Nuova Cosenza,53,54
+Nîmes,392,307
+Nürnberg,545,454
+Olhanense,408,316
+Olympique Lyonnais,788,333
+Olympique Marseille,667,381
+Orléans,104,107
+Osasuna,543,460
+Ovarense,272,136
+PEC Zwolle,557,411
+PSG,841,321
+PSV,983,267
+Paderborn,335,294
+Padova,153,126
+Palermo FC,527,374
+Paris FC,95,83
+Parma,405,321
+Pau FC,19,16
+Paços de Ferreira,454,359
+Penafiel,344,265
+Perugia,237,175
+Pescara,459,447
+Piacenza,300,213
+Pisa,105,92
+Pistoiese,63,62
+Plymouth Argyle,31,23
+Poli Ejido,165,129
+Ponferradina,228,176
+Pontevedra,36,28
+Pordenone,45,27
+Port Vale,27,30
+Portimonense,456,456
+Porto,835,199
+Porto II,130,306
+Portsmouth,339,264
+Preston North End,224,143
+Pro Vercelli,119,122
+Queens Park Rangers,174,174
+Quevilly,23,33
+R. Sociedad,649,457
+RB Leipzig,226,116
+RBC Roosendaal,276,279
+RKC Waalwijk,330,311
+RM Castilla,146,104
+RW Essen,46,44
+Racing,388,380
+Racing Ferrol,148,147
+Ravenna FC,62,70
+Rayo Majadahonda,23,23
+Rayo Vallecano,543,444
+Reading,198,161
+Real Betis,611,472
+Real Jaén,67,57
+Real Madrid,1092,396
+Real Murcia,344,279
+Real Oviedo,277,203
+Real Sport Clube,152,38
+Real Sporting,623,446
+Real Unión de Irún,25,24
+Real Valladolid,581,446
+Real Zaragoza,635,473
+Recreativo,401,326
+Red Star,60,85
+Reggiana,17,21
+Reggina,286,260
+Reus Deportiu,46,54
+Reutlingen,100,65
+Rimini,119,83
+Rio Ave,340,295
+Roda JC,537,423
+Rodez,41,34
+Roma,693,324
+Rot Weiss Ahlen,185,193
+Rot-Weiss Erfurt,17,21
+Rot-Weiß Oberhausen,219,187
+Rotherham United,131,145
+SC Freamunde,370,140
+SC Freiburg,598,461
+SC Salgueiros,56,78
+SC Telstar,454,344
+SP. Covilhã,214,174
+SPAL,121,129
+SSC Bari,457,331
+SV Babelsberg 03,19,41
+SV Eintracht Trier,76,62
+SV Wacker Burghausen,114,104
+SV Wehen Burghausen,45,45
+Saarbrücken,96,101
+Sabadell,142,124
+Saint-Étienne,572,374
+Salernitana,382,315
+Sampdoria,599,428
+Sandhausen,171,170
+Sassuolo,358,310
+Schalke 04,623,392
+Schweinfurt,23,27
+Sedan,376,246
+Sevilla,732,409
+Sevilla At.,105,109
+Sheffield United,267,204
+Sheffield Wednesday,132,146
+Siegen Sportfreunde ,24,27
+Siena,311,240
+Sochaux,530,417
+Southampton,395,343
+Sparta Rotterdam,627,430
+Spezia,308,241
+Sporting Braga,622,324
+Sporting Braga II,122,164
+Sporting CP,659,241
+Sporting CP II,42,84
+Stade Brestois,430,298
+Stade Lavallois,394,309
+Stade Rennais,581,409
+Stade de Reims,421,315
+Stockport County,81,101
+Stoke City,357,303
+Strasbourg,409,319
+Stuttgart,617,438
+Stuttgarter Kickers,47,49
+Sunderland,394,389
+Swansea City,202,182
+Swindon Town,23,37
+Sète,23,30
+TOP Oss,562,423
+Tenerife,560,400
+Tennis Borussia,25,22
+Ternana Calcio,346,260
+Terrassa FC,69,62
+Tondela,238,220
+Torino,548,413
+Tottenham Hotspur,751,429
+Toulouse,493,381
+Tours,290,250
+Tranmere Rovers,65,60
+Trapani,155,106
+Treviso,211,178
+Triestina ,240,186
+Trofense,164,81
+Troyes,538,392
+TuS Koblenz,92,81
+Twente 1965,657,384
+UCAM Murcia,24,23
+UD Logroñés,13,18
+UD Oliveirense,272,240
+UD Salamanca,314,257
+Udinese,455,394
+Ulm,47,51
+Uniao Lamas,204,102
+Union Berlin,410,266
+Universidad LPGC,18,25
+União Madeira,193,119
+União de Leiria,243,219
+Unterhaching,158,111
+Utrecht,674,448
+VVV Venlo,640,577
+Valence,69,53
+Valencia,739,400
+Valenciennes,394,309
+Vannes,67,62
+Varese,152,108
+Varzim,414,417
+Vecindario,21,34
+Venezia,216,196
+VfB Lübeck,56,45
+VfL Bochum,611,501
+VfL Osnabrück,162,158
+VfR Aalen,68,54
+Vicenza ,439,363
+Villarreal,686,419
+Villarreal B,89,83
+Virtus Entella,158,130
+Virtus Lanciano,102,92
+Vitesse,651,450
+Vitória Guimarães,520,358
+Vitória Guimarães B,138,80
+Vitória Setúbal,501,451
+Vizela,308,58
+Waldhof Mannheim,116,97
+Walsall,118,126
+Watford,377,340
+Wehen Wiesbaden,20,38
+Werder Bremen,685,507
+West Bromwich Albion,424,431
+West Ham,594,511
+Wigan Athletic,240,246
+Willem II,613,620
+Wimbledon FC,153,144
+Wolfsburg,658,463
+Wolves,340,291
+Wycombe Wanderers,14,27
+Würzburger Kickers,33,40
+Xerez,330,276

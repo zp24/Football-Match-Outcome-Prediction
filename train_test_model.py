@@ -17,7 +17,7 @@ import time
 
 
 class TrainTestModel:
-    def __init__(self, single = True):
+    def __init__(self, single = False):
         pio.renderers.default = "vscode" #set default renderer to 'notebook' or 'vscode'
         season = range(1990, 2022)
         league = ["premier_league","2_liga", "bundesliga", "championship", "eerste_divisie", "ligue_1", "ligue_2", "eredivisie",
@@ -33,13 +33,15 @@ class TrainTestModel:
                         self.file = f"cleaned_datasets/{self.league}/cleaned_dataset_{self.league}.csv"
                         self.x = pd.read_csv(self.file)
                     else:
-                        print("Select league from list")
-                #rename index column to Match_Number and apply to DataFrames
+                        print("Select league from list to load file")
                 
             else:
-                self.file = f"cleaned_datasets/cleaned_dataset.csv"
+                self.file = f"cleaned_datasets/cleaned_dataset1.csv"
                 self.x = pd.read_csv(self.file)
+
+            #rename index column to Match_Number and apply to DataFrames
             self.x = self.x.rename({"Unnamed: 0": "Match_Number"}, axis= 'columns') 
+
             #self.x.head() #display 5 rows of dataset
         except:
             f"{self.file} failed to load"
