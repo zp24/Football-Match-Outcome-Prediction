@@ -19,7 +19,9 @@ import time
 class TrainTestModel:
     def __init__(self, single = False):
         pio.renderers.default = "vscode" #set default renderer to 'notebook' or 'vscode'
-        season = range(1990, 2022)
+        self.season_start = 2010
+        self.season_end = 2022
+        season = range(self.season_start, self.season_end) 
         league = ["premier_league","2_liga", "bundesliga", "championship", "eerste_divisie", "ligue_1", "ligue_2", "eredivisie",
                 "primeira_liga", "primera_division", "segunda_division", "segunda_liga", "serie_a", "serie_b"]
         
@@ -36,7 +38,7 @@ class TrainTestModel:
                         print("Select league from list to load file")
                 
             else:
-                self.file = f"cleaned_datasets/cleaned_dataset1.csv"
+                self.file = f"cleaned_datasets/cleaned_dataset_{self.season_start}-{self.season_end}.csv"
                 self.x = pd.read_csv(self.file)
 
             #rename index column to Match_Number and apply to DataFrames

@@ -28,8 +28,11 @@ class MatchOutcomeData:
         PORT = os.environ.get('DB_PORT')
 
         self.engine = create_engine(f'{DATABASE_TYPE}+{DBAPI}://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}')'''
-        season = range(2010, 2022) #will use data from 2010 to 2021 - need to have range to 2022 otherwise final year will be 2020
-        
+        #will use data from 2010 to 2021 seasons - need to have range to 2022 otherwise final year will be 2020
+        self.season_start = 2010
+        self.season_end = 2022
+        season = range(self.season_start, self.season_end) 
+
         league = ["premier_league","2_liga", "bundesliga", "championship", "eerste_divisie", "ligue_1", "ligue_2", "eredivisie",
                 "primeira_liga", "primera_division", "segunda_division", "segunda_liga", "serie_a", "serie_b"]
         files = []
@@ -362,9 +365,9 @@ class MatchOutcomeData:
                 #if folder already exists
                     team_points.to_csv(f"{folder}/cleaned_dataset_points1.csv", encoding='utf-8')
                     team_goals.to_csv(f"{folder}/cleaned_dataset_goals1.csv", encoding='utf-8')
-                    data.to_csv(f"{folder}/cleaned_dataset1.csv", encoding='utf-8', index = True)
+                    data.to_csv(f"{folder}/cleaned_dataset_{self.season_start}-{self.season_end}.csv", encoding='utf-8', index = True)
             
-            return "dataset saved to csv" 
+            return f"dataset saved to csv as 'cleaned_dataset_{self.season_start}-{self.season_end}.csv'" 
 
     ############ GRAPHS ############
     def show_res_freq(self):
