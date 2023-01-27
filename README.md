@@ -202,3 +202,13 @@ Additionally, the pipeline had already been created whilst working through Miles
 ![image](https://user-images.githubusercontent.com/58480783/170873467-7aadd84e-5ab4-4ebc-9cff-8d41e6ea7376.png)
 
 This Milestone required very little time to complete given the objectives had already been met; all that was required was to setup and establish a connection with the RDS instance so that any data uploaded to it could be analysed in an SQL table.
+
+##Milestone 4
+
+This Milestone requires training a model to predict future match outcomes.
+
+The newly manipulated datasets saved by the user are used to train a model to obtain a baseline score, but to ensure the model's reliability, match-specific data needs to be removed to avoid data leakage which resulted in 100% accuracy every time. This was because the model did not need to train since it was provided with all the data it needed to "predict" the outcome. As such, a block of code was added for the user to see what data was currently being used and then decide what columns they wanted to remove.
+
+Once the user has removed the columns they want, they can choose to train a model using RF or LR, before the accuracy is displayed.
+
+Overall, this was a fairly timeconsuming Milestone to complete due to needing to clean up some of the data which was in a different format and would subsquently cause errors when running scripts. Because real data was being used, these had to be looked up and used to replace the current information whilst running the relevant script rather than looking for the entries in the dataset and updating it. However, this shows how easy it can be to correctly amend data in a document without manually correcting it by opening the file, locating and then saving it, although that would mean only a single correction is required if the dataset is to be usded more than once.
